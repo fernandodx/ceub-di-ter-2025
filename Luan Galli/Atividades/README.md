@@ -10,6 +10,6 @@ Este diretório contém todas as atividades e exercícios propostos ao longo da 
 ### Lista de Atividades
 | Atividade       | Status      | Data de Entrega |
 | --------------- | ----------- | --------------- |
-| Atividade 1     | A fazer     | dd/mm/aaaa      |
+| Atividade 1     | Finalizado  | 12/08/2025      |
 | Atividade 2     | Em andamento| dd/mm/aaaa      |
 | ...             | ...         | ...             |
