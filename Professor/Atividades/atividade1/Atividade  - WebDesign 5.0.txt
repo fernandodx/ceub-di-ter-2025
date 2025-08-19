@@ -11,3 +11,4 @@ Entrega:
 	•	Na pasta Atividades do seu projeto, crie uma subpasta chamada Atividade 1.
 	•	Dentro dela, salve seu arquivo com o nome da tendência escolhida e sua explicação.
 
+.
