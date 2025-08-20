@@ -18,3 +18,6 @@ A Montserrat, com suas geométricas e peso moderno, confere aos títulos uma pre
 Princípio Selecionado: Movimento Significativo (Meaningful Motion)
 
 O Material Design, criado pelo Google, enfatiza que o movimento em interfaces não deve ser meramente decorativo, mas sim funcional e significativo. Ele serve para guiar o usuário, fornecer feedback visual, indicar relações entre elementos e ajudar a manter o contexto. O movimento deve ser previsível e natural, imitando as leis da física para criar uma experiência tangível e intuitiva. Isso inclui animações suaves em transições de tela, respostas a interações do usuário (como pressionar um botão) e a indicação de hierarquia visual. O objetivo é tornar a interface mais viva, responsiva e agradável de usar, sem sobrecarregar o usuário com excesso de animação.
+Podemos aplicar o princípio de Movimento Significativo das seguintes formas:
+Transições de Tela: Ao navegar entre as seções do aplicativo, utilizaremos transições sutis, como um deslizar suave ou um fade-in/fade-out, para indicar a mudança de contexto sem que o usuário perca o fio da navegação.
+Feedback de Interação: Ao tocar em botões ou realizar ações importantes, uma animação discreta (como um leve
