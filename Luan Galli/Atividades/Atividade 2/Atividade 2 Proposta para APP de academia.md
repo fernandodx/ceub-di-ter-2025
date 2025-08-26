@@ -11,6 +11,7 @@ A paleta de cores foi construída a partir da base encontrada na ferramenta Colo
 | Verde Destaque | #9CAFAA | Um verde sálvia, um pouco mais escuro. Passa uma sensação de crescimento, renovação e calma. Pode ser usado em gráficos de progresso ou ícones. |
 | Rosa Queimado | #D6A99D | Um tom terroso e acolhedor. Funciona como um ponto de cor quente para motivar sem ser agressivo. Ideal para botões de ação secundários ou elementos de destaque. |
 | Azul Escuro | #3D5A6C | (Cor adicionada) Um azul-acinzentado escuro que serve como a cor principal para textos e elementos de alto contraste. Transmite seriedade, foco e estabilidade, garantindo excelente legibilidade. |
+| Laranja queimado/terracota | #D97746 | Este tom de laranja queimado/terracota é a escolha perfeita para injetar energia e ação. Ele é vibrante, mas não é agressivo, e por ser um tom terroso, ele "conversa" perfeitamente com o seu Rosa Queimado (#D6A99D) e os verdes. Passa uma sensação de paixão, movimento e determinação. |
 2\. Tipografia
 
 A combinação de fontes foi escolhida para criar uma hierarquia visual clara, moderna e amigável, garantindo legibilidade em telas de diferentes tamanhos e uma identidade visual que inspira confiança e energia.
