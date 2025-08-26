@@ -1,0 +1,36 @@
+Atividade de Web Design – Paleta, Tipografia e Guidelines
+
+Objetivo
+
+Exercitar a escolha e justificativa de paletas de cores e tipografias, aplicando conceitos de guidelines de design (como Material Design ou Human Interface Guidelines ou Outro de sua escolha).
+
+⸻
+
+Enunciado
+
+Você deverá criar uma proposta de identidade visual para um aplicativo fictício (tema de sua escolha: finanças, educação, saúde, esportes, música etc.).
+
+Etapas da Atividade:
+	1.	Paleta de Cores
+		•	Monte uma paleta de pelo menos 5 cores (primária, secundária, destaque, fundo e texto).
+		•	Use ferramentas como Coolors, Adobe Color ou Material Palette.
+		•	Justifique: por que escolheu essas cores? Qual sensação ou mensagem elas transmitem para o usuário?
+	2.	Tipografia
+		•	Escolha pelo menos uma fonte primária (para títulos) e uma secundária (para textos de apoio).
+		•	Utilize Google Fonts ou FontPair.
+		•	Justifique: como essa fonte ajuda na legibilidade e na identidade visual do aplicativo?
+	3.	Estudo de Guidelines
+		•	Escolha um sistema de design oficial (Material Design, Human Interface Guidelines da Apple, Fluent Design da Microsoft ou outro).
+		•	Escreva um resumo (mínimo 10 linhas) explicando um princípio de design desse guia (ex.: tipografia responsiva no Material Design, uso de cores em Dark Mode, espaçamentos, acessibilidade etc.).
+		•	Explique como esse princípio poderia ser aplicado ao seu app.
+
+⸻
+
+Entregáveis
+	•	Documento (arquivo markdown [file.md]) contendo:
+	•	A paleta de cores com os códigos hexadecimais.
+	•	As fontes escolhidas com links e exemplos visuais.
+	•	O resumo do guideline estudado e sua aplicação prática.
+	•   Use o tutorial para converter word em md. (../Professor/Tutoriais/tutorial_docstomarkdown.pdf)
+
+⸻
