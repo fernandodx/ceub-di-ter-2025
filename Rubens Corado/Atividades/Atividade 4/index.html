@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme Favorito: Carros</title>
+    <style>
+        /* Estilo geral */
+        body {
+            background-color: #b30000; /* vermelho vibrante */
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(180deg, #ffcc00, #b30000);
+            padding: 30px 0;
+            color: white;
+        }
+
+        .poster {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            margin-bottom: 15px;
+        }
+
+        .banner h1 {
+            font-size: 2.8em;
+            color: #fff;
+            text-shadow: 2px 2px 8px #ffcc00;
+        }
+
+        /* Conteúdo */
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ffcc00;
+            border-radius: 15px;
+            padding: 20px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .card h2 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .card p, .card ul {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #800000;
+            color: #ffcc00;
+            padding: 15px;
+            font-weight: bold;
+            border-top: 3px solid #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <!-- Pôster base64 embutido -->
+        <img 
+            src="data:image/jpeg;base64,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"
+            alt="Pôster do filme Carros" class="poster">
+        <h1>Carros</h1>
+    </header>
+
+    <!-- Seção de Conteúdo -->
+    <main class="conteudo">
+        <div class="card">
+            <h2>Enredo</h2>
+            <p>Carros conta a história de Relâmpago McQueen, um carro de corrida ambicioso que aprende o valor da amizade e da humildade enquanto se encontra na cidade de Radiator Springs.</p>
+        </div>
+
+        <div class="card">
+            <h2>Personagens</h2>
+            <ul>
+                <li>Relâmpago McQueen</li>
+                <li>Mate</li>
+                <li>Sally</li>
+                <li>Doc Hudson</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>O filme é da Pixar e lançado em 2006.</li>
+                <li>Inspirado nas pequenas cidades da Rota 66.</li>
+                <li>Recebeu indicação ao Oscar de Melhor Animação.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito com 💛 por Rubens!</p>
+   
