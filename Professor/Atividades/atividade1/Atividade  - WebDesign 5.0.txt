@@ -1,0 +1,14 @@
+Atividade 1 – Tendências de Web Design
+
+Com base no conteúdo apresentado no Slide 1 – Web Design 5.0, siga as etapas abaixo:
+	1.	Escolha uma tendência de design apresentada no slide.
+	2.	Pesquise quais empresas, marcas ou projetos ainda utilizam essa tendência ou planejam utilizá-la.
+	3.	Analise e justifique:
+	•	Se essa tendência continuará em uso nos próximos anos, explique o motivo.
+	•	Caso contrário, explique por que ela deixou de ser usada ou por que pode deixar de ser utilizada.
+
+Entrega:
+	•	Na pasta Atividades do seu projeto, crie uma subpasta chamada Atividade 1.
+	•	Dentro dela, salve seu arquivo com o nome da tendência escolhida e sua explicação.
+
+.
