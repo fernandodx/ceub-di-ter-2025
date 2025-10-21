@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">   
     <!-- Título da página-->
     <title>Meu Primeiro Site</title>
 </head>
@@ -16,10 +17,10 @@
    <h1>Olá Mundo!</h1> 
 
    <!-- Títulos-->
-   <h1>Título Principal</h1> 
-   <h2>Título Secundário</h2>
+   <h1 class="destaque">Título Principal</h1> 
+   <h2 id="titulo_secundario">Título Secundário</h2>
    <h3>Título Terciário</h3>
-   <h6>Título Menor</h6>
+   <h6 class="destaque">Título Menor</h6>
 
    <!-- Parágrafos -->
    <p>Este é um texto com <b>negrito</b> usando tag B</p> 
@@ -110,8 +111,11 @@
         <label>E-mail: </label><br>
         <input type="email" 
                placeholder="Digite seu e-mail" required><br><br>
-        <input type="submit" value="Enviar">
+        <input class="botao_default" type="submit" value="Enviar">
    </form>
+
+   <a href="sobre.html">Ir para Sobre</a>
+ 
 
 
 
