@@ -1,0 +1,65 @@
+/*
+Padrão da Sintax
+
+SELETOR {
+  propriedade : valor;
+  propriedade2 : valor2;
+ }
+*/
+
+/* TAG SELETOR */
+h3 {
+    color: rebeccapurple;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* CLASSE SELETOR (•) */
+
+.destaque {
+    background-color: aquamarine;
+    padding: 8px;
+    margin: 8px;
+    border: 5px solid #0cce5a;
+    border-style: dotted;
+    color: #03322f;
+}
+
+/* ID SELETOR (#) */
+#titulo_secundario {
+    font-style: italic;
+    color: #bb1068ee;
+}
+
+p b {
+    font-family: Verdana;
+    color: blue;
+}
+
+ul li {
+    text-align: center;
+}
+
+.botao_default {
+    background-color: #03322f;
+    color: aliceblue;
+    padding: 8px 16px 8px 16px;
+    border: 2px solid #0cc8bb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botao_default:hover {
+    background-color: #25e6d9;
+    color: rgb(3, 58, 57);
+    padding: 8px 16px 8px 16px;
+    border: 2px solid #022d2a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
