@@ -111,3 +111,49 @@ async function executarBusca() {
 }
 
 executarBusca();
+
+const meuMetodo = function exemploMetodo () {
+  log("Executei a function")
+}
+
+log(meuMetodo)
+
+const objTeste = {
+  oi() {
+    log("Oi")
+  },
+  xau() {
+    log("Xau")
+  }
+};
+
+objTeste.xau();
+
+//Manipulação do DOM
+
+document.addEventListener ("DOMContentLoaded", () => {
+  let titulo = document.createElement("h2");
+
+  titulo.innerText = "Olá, DOM!";
+  document.body.appendChild(titulo)
+
+});
+
+
+function toggleImagem()
+{
+  let img = document.getElementById("minhaImagem")
+
+  img.style.display = img.style.display === 'none' ? 'block' : 'none';
+  img.style.borderRadius = "20px";
+
+}
+
+
+
+function mostrarValorCombo()
+{
+  let listaCombo = document.getElementById("meuCombo")
+
+  window.alert("Combo selecionada: " + listaCombo.value)
+}
