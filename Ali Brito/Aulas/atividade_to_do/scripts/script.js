@@ -8,8 +8,20 @@ window.onload = function () {
 
         const li = document.createElement("li");
 
+        const btnRemover = document.createElement("button")
+        btnRemover.textContent = "X"
+        btnRemover.style.marginLeft = "10px";
+        btnRemover.classList.add("fechar")
+        btnRemover.addEventListener("click", (event) => {
+            li.remove();
+        });
+
         li.textContent = texto;
         lista.appendChild(li);
+        li.appendChild(btnRemover)
+
+        input.value = ""
 
     })
 };
+
