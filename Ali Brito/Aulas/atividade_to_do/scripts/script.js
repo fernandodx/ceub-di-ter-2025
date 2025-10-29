@@ -16,6 +16,10 @@ window.onload = function () {
             li.remove();
         });
 
+        li.addEventListener("click", () => {
+            li.classList.toggle("concluida")
+        })
+
         li.textContent = texto;
         lista.appendChild(li);
         li.appendChild(btnRemover)
@@ -23,5 +27,6 @@ window.onload = function () {
         input.value = ""
 
     })
+
 };
 

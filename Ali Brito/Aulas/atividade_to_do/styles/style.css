@@ -80,3 +80,9 @@ ul
     color: white;
     cursor: pointer;
 }
+
+li.concluida
+{
+    text-decoration: line-through;
+    color: rgb(14, 78, 14);
+}
