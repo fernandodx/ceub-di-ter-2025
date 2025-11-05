@@ -108,3 +108,41 @@ async function executarBusca() {
 }
 
 executarBusca();
+
+
+const meuMetodo = function exemploMeodo(){
+  log("Executei por function")
+};
+
+ log(meuMetodo);
+
+ const objTeste = {
+  oi(){
+    log("OI!!!!!")
+  },
+  xau(){
+    log("XAU")
+  },
+ };
+
+ objTeste.oi();
+ objTeste.xau();
+
+ //Manipulação do DOM
+ // Aqui criamos um elemento dinamicamente e o add no body
+ document.addEventListener("DOMContentLoaded", () => {
+    let titulo = document.createElement("h2")
+    titulo.innerText = "Olá P.DIDDY"
+    document.body.appendChild(titulo);
+ });
+
+ function toggleImagem() {
+   let img = document.getElementById("minhaImagem");
+   img.style.display = img.style.display === "none" ? "block" : "none";
+ }
+
+ function mostrarValorCombo() {
+  let combo = document.getElementById("meuCombo")
+  alert("Combo seleciona: "+ combo.value);
+ }
+
