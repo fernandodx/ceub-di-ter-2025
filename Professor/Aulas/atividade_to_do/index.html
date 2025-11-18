@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tarefa.js"></script>
+    <style>
+        body {
+            font-family: 'Gill Sans';
+            background: #cdcdcd;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .input-area {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #tarefaInput {
+            padding: 8px;
+            width: 200px;
+        }
+        #btnAdicionar {
+            padding: 8px 12px;
+            margin-left: 5px;
+            color: #f9f9f9;
+            background-color: darkolivegreen;
+            border: #333 2px dotted;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        ol {
+            padding: 0px;
+        }
+        li {
+          background: #fff;  
+          margin: 8px 0;
+          padding: 10px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-content: center;  
+        }
+        .fechar {
+            background-color: rgb(175, 18, 75);
+            border-radius: 100px;
+        }
+
+        li.concluida {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+    </style>
+    <title>To do</title>
+</head>
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+
+    <div class="input-area">
+        <input type="text" 
+               id="tarefaInput" 
+               placeholder="Digite sua tarefa!">
+        <button id="btnAdicionar">Adicionar</button> 
+    </div>
+
+    <ol id="listaTarefas"> </ol>
+    
+</body>
+</html>
