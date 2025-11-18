@@ -1,0 +1,260 @@
+:root {
+    --primary:#333;
+    --secondary: #f4f4f4;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------------------- */
+/* Estilo do Vídeo de Apresentação */
+/* ---------------------- */
+#slides {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #1c1c1e;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%; /* Proporção de 16:9 para o vídeo (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 60%; /* Para que o vídeo não ocupe a largura toda em telas grandes */
+    margin: auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot:hover,
+.dot.active {
+    background-color: #00ffcc; /* Cor de destaque nos pontos */
+}
+/* ---------- HERO (Apresentação) - Estilo isolado ---------- */
+.hero {
+    background: linear-gradient(to right, black, rgb(61, 61, 61), silver);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    
+}
+
+.hero-content img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+#inicio {
+    justify-content: center;
+    align-items: center;
+    color: lightgoldenrodyellow;
+    text-align: center;
+
+}
+
+#sobre {
+    padding: 40px;
+    background-color: #333333;
+    text-align: center;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    object-fit: cover;
+    box-shadow: 15px 15px 35px rgb(180, 100, 100);
+}
+
+.sobre-texto {
+    max-width: 500px;
+    text-align: left;
+    color: #f4f4f4;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f4f4f4;
+    font-family:serif;
+}
+
+#projetos {
+    background-color: black; /* Cor de fundo clara */
+    padding: 50px 20px;        /* Espaçamento interno */
+    background-color: #333333;
+}
+
+#projetos h2 {
+    text-align: center; /* Centraliza horizontalmente */
+    font-size: 25px;      /* Tamanho do título (opcional) */
+    margin-bottom: 1px; /* Espaço abaixo do título */
+    color: white;         /* Cor do texto (opcional) */
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    color: white;
+}
+
+.projeto {
+    background: dimgray;
+    padding: 30px;
+    border-radius: 20px; 
+    box-shadow: 10px 10px 20px rgba(200, 100, 100);
+}
+/* Estilo para a nova seção de Projetos Acadêmicos */
+#projetos-academicos {
+    background-color: #2a2a2a; /* Uma cor um pouco diferente para destacar */
+    padding: 50px 20px;
+    color: white;
+}
+
+#projetos-academicos h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px; /* Adicionado um pouco mais de espaço abaixo do título */
+    color: white;
+}
+.projeto img {
+    width: 100%; /* Isso faz a imagem ocupar 100% da largura do seu contêiner (.projeto) */
+    height: 200px; /* Define uma altura fixa para todas as imagens dos projetos */
+    object-fit: cover; /* Isso garante que a imagem cubra a área definida, cortando o excesso se necessário, sem distorcer */
+    border-radius: 8px; /* Arredonda as bordas da imagem, se desejar */
+    margin-bottom: 15px; /* Adiciona um pequeno espaço abaixo da imagem */
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #00ffcc; /* Nova cor de fundo, alinhada com os pontos */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.botao:hover {
+    background-color: #00e6b8; /* Escurece um pouco a cor ao passar o mouse */
+}
+
+#contato {
+    background-color: #333333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais a {
+    color: white;
+    font-size: 2em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2);
+    color: #00ffcc; /* cor de destaque ao passar o mouse */
+}
