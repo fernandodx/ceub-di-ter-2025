@@ -4,14 +4,10 @@
 * **Nome:** Luan Galli
 
 ## Sobre o Projeto
-Uma breve descrição do que o seu projeto final fará. Qual problema ele resolve? Quais tecnologias serão usadas?
+Projeto final Criação de um WEB Portifólio
 
 ## Estrutura do Projeto
-* **/docs:** Documentação do projeto.
-* **/src:** Código-fonte da aplicação.
-* **/assets:** Imagens e outros recursos.
-
-## Como Executar
-1.  Clone o repositório.
-2.  Instale as dependências com `npm install`.
-3.  Execute o projeto com `npm start`.
+* **index** Código web do projeto.
+* **/img** Imagens usadas para o projeto.
+* **/script** Código-fonte em JavaScript.
+* **/style** Código estilo do projeto.
