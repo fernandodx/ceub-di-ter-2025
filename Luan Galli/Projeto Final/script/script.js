@@ -6,15 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     links.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
+            // Verifica se o link é interno (começa com #)
+            const href = this.getAttribute("href");
+            
+            if (href.startsWith("#")) {
+                event.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 50,
-                    behavior: "smooth"
-                });
+                if (targetElement) {
+                    // Cálculo do topo menos a altura do header (aprox 60px)
+                    const offsetPosition = targetElement.offsetTop - 60;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });
