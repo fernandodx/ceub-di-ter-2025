@@ -1,0 +1,134 @@
+<!-- Identificação da página-->
+<!DOCTYPE html>
+<!--Início do bloco principal HTML -->
+<html lang="en">
+<!-- Cabeçalho com dados importantes para a página-->    
+<head>
+    <!-- TAG Meta para uso dos robô de busca-->
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">   
+    <!-- Título da página-->
+    <title>Meu Primeiro Site</title>
+</head>
+<body>
+   <!-- Aqui no body é tudo o que usuário ver --> 
+   <h1>Olá Mundo!</h1> 
+
+   <!-- Títulos-->
+   <h1 class="destaque">Título Principal</h1> 
+   <h2 id="titulo_secundario">Título Secundário</h2>
+   <h3>Título Terciário</h3>
+   <h6 class="destaque">Título Menor</h6>
+
+   <!-- Parágrafos -->
+   <p>Este é um texto com <b>negrito</b> usando tag B</p> 
+   <p>Este é outro texto com <i>itálico</i> usando tag i</p>
+   <p>
+     Estou quebrando linha com tag BR <br>
+     Esta é 2˚ <u>linha sublinhado</u> usando tag U <br>
+     Esta é 3˚ <s>linha riscado</s> usando tag U <br>
+   </p>
+
+   <!-- Listas-->
+   <h3>Listas Não Ordenadas -> ul</h3>
+   <ul>
+        <li>Ferver água</li>
+        <li>Colocar pó no coador</li>
+        <li>Colocar água quente</li>
+   </ul>
+   <h3>Listas Ordenadas -> ol</h3>
+   <ol>
+        <li>Ferver água</li>
+        <li>Colocar pó no coador</li>
+        <li>Colocar água quente</li>
+   </ol>
+
+   <h3>Listas Com Hierarquia</h3>
+   <ul>
+    <li> Pratos Principais
+        <ol>
+            <li>Frango</li>
+            <li>Carne</li>
+        </ol>
+    </li>
+     <li> Sobremesas
+        <ol>
+            <li>Pavê</li>
+            <li>Pudim</li>
+        </ol>
+    </li>
+   </ul>
+
+   <!-- Links -->
+
+   <h3>Seção de links</h3>
+   <p>
+     <a href="https://google.com" target="_blank">
+        Site do Google
+    </a>
+   </p>
+   <p>
+    <a href="mailto:fernando.dsouza@ceub.edu.br">
+        Abrir E-mail
+    </a>
+   </p>
+
+   <!-- tag HR para linha horizontal-->
+   <hr>
+
+   <!-- Imagens -->
+   <img width="200" height="200" 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Airbus_A380_blue_sky.jpg/330px-Airbus_A380_blue_sky.jpg">  
+   
+   <!-- Tabelas -->
+   <!-- TR  = Linha | TD = Célula -->
+   <table border="1">
+       <tr>
+         <th>Nome</th>
+         <th>Idade</th>
+         <th>Turma</th>
+       </tr> 
+       <tr>
+            <td>Fernando</td>
+            <td>36</td>
+            <td>A</td>
+       </tr>
+       <tr>
+            <td>Ana</td>
+            <td>38</td>
+            <td>B</td>
+       </tr>
+   </table> 
+   <!-- Formulários-->
+   <h3> Seção Formulários</h3>
+
+   <form action="https://seuServidor.com.br/cadastrar" method="post">
+        <label>Nome: </label><br>
+        <input type="text" 
+               placeholder="Digite seu nome" required><br><br>
+        <label>E-mail: </label><br>
+        <input type="email" 
+               placeholder="Digite seu e-mail" required><br><br>
+        <input class="botao_default" type="submit" value="Enviar">
+   </form>
+
+   <a href="sobre.html">Ir para Sobre</a>
+ 
+
+
+
+
+
+
+
+
+
+   <br>
+   <br>
+   <br>
+   <br>
+    
+</body>
+</html>
