@@ -4,10 +4,11 @@
     --text-color: #000000;
     --text-secondary: #ffffff;
     --text-tertiary: #000000;
+    --quartiary: #DDA43B8C;
 }
 
 * {
-    font-family: Montserrat, sans-serif;
+    font-family: roboto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -104,14 +105,16 @@ h2 {
 }
 
 #subscription-form {
-    background-color: var(--secondary);
+    background: linear-gradient(rgba(63, 122, 113, 0.74), rgba(164, 182, 171, 0.6));
     padding: 1em;
+    border-radius: 5%;
 }
 
 #subscription-form p {
     font-size: 1.5em;
     color: var(--text-secondary);
     margin-bottom: 1em;
+    border-radius: 5em;
 }
 
 .form-group {
@@ -121,7 +124,7 @@ h2 {
 }
 
 .form-group label {
-    color: var(--text-tertiary);
+    color: var(--primary);
     margin-bottom: 0.3em;
     font-weight: bold;
 }
@@ -151,62 +154,10 @@ h2 {
     opacity: 1;
 }
 
-/* Tecnologias */
-
-#key-technologys h2 {
-    background: var(--secondary);
-    color: var(--primary);
-    text-align: center;
-    padding: 2em;
-    font-weight: bold;
-}
-
-.technologys {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em;
-    margin: 0 auto;
-}
-
-.technology {
-    font-size: 0.5em;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 15%;
-    color: var(--text-tertiary);
-}
-
-#technology-1 {
-    background-image: url(../img/logos/github.png);
-}
-#technology-2 {
-    background-image: url(../img/logos/figma.png);
-}
-#technology-3 {
-    background-image: url(../img/logos/html.webp);
-}
-#technology-4 {
-    background-image: url(../img/logos/css.webp);
-}
-#technology-5 {
-    background-image: url(../img/logos/js.png);
-}
-
-.technology .technology-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 1em;
-}
-
 /* Sobre */
 
 #about {
-    height: 400px;
+    height: 300px;
   background: linear-gradient(rgba(24, 58, 53, 0.6), rgba(164, 182, 171, 0.6)),
     url("../img/about-banner.jpg");
   background-position: center;
@@ -215,7 +166,7 @@ h2 {
   align-items: center;
   justify-content: space-around;
   color: var(--primary);
-  margin-bottom: 3em;
+  
 }
 
 #about-id, #about-description {
@@ -262,7 +213,7 @@ h2 {
 
 #projects {
     padding: 2em 1em;
-    background: rgba(255,255,255,0.03);
+    background: rgba(183, 184, 150, 0.705);
     color: var(--text-tertiary);
     text-align: center;
 }
@@ -270,7 +221,7 @@ h2 {
     text-align: center;
     margin-bottom: 1em;
     color: var(--primary);
-    background: var(--secondary);
+    background: var(--quartiary);
     display: inline-block;
     padding: 0.6em 1.2em;
     border-radius: 8px;
@@ -291,7 +242,7 @@ h2 {
 }
 .project-card {
     width: 320px;
-    background: rgba(255,255,255,0.03);
+    background: rgba(221, 164, 59, 0.548);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
@@ -301,7 +252,7 @@ h2 {
 }
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.747);
 }
 .project-thumb {
     height: 160px;
@@ -322,10 +273,10 @@ h2 {
 
 /* Footer */
 #site-footer {
-    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.849), rgba(0,0,0,0.6));
     color: var(--primary);
     padding: 2em 1em;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 .footer-container {
     max-width: 1100px;
