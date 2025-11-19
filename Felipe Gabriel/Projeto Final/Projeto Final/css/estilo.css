@@ -1,6 +1,10 @@
 :root{
     --primary: #8ABEB9;
+<<<<<<< HEAD
     --secondary: #166386;
+=======
+    --secondary: #305669;
+>>>>>>> d181f432d078ff790266a8b6a60d6f7197335108
     --text-color: #f5f5f5;
     --text-secondary: #87E5CD;
     --text-tertiary: #C1785A;
@@ -10,7 +14,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-size: 14;
+=======
+>>>>>>> d181f432d078ff790266a8b6a60d6f7197335108
 }
 
 #event-subscription {
@@ -38,9 +45,12 @@ h2{
 }
 #subscription-form{
     padding: 2em;
+<<<<<<< HEAD
     background: linear-gradient(rgba(29, 37, 100, 0.534));
     border-radius: 25px;
     
+=======
+>>>>>>> d181f432d078ff790266a8b6a60d6f7197335108
 
 }
 #subscription-form p{
@@ -80,6 +90,7 @@ h2{
 }
 .btn:hover{
     opacity: 1;
+<<<<<<< HEAD
 }
 #key-technologys h2{
     background-color: var(--secondary);
@@ -234,3 +245,6 @@ footer .creditos {
     font-size: 0.9rem;
     color: #bbbbbb;
 }
+=======
+}
+>>>>>>> d181f432d078ff790266a8b6a60d6f7197335108
