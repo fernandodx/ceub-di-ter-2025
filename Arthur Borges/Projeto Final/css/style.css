@@ -1,0 +1,192 @@
+/* CORES E VARIÁVEIS */
+:root {
+    /* Tema Escuro (Padrão) */
+    --bg-color: #2F3E46; 
+    --text-color: #E0E0E0; 
+    --accent-color: #84A98C; /* Verde Pálido */
+    
+    --dark-block-bg: rgba(0, 0, 0, 0.6); 
+    --dark-block-border: rgba(255, 255, 255, 0.08);
+
+    --glass-bg: rgba(255, 255, 255, 0.05); 
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    --input-bg: rgba(255, 255, 255, 0.05); /* Fundo dos inputs */
+    --input-border: rgba(255, 255, 255, 0.15);
+    
+    --bg-image: url('../img/fundo.jpg');
+}
+
+/* Tema Claro */
+body.light-mode {
+    --bg-color: #F8F9FA; 
+    --text-color: #212529; 
+    --accent-color: #4CAF50; 
+    
+    --dark-block-bg: rgba(255, 255, 255, 0.8); 
+    --dark-block-border: rgba(0, 0, 0, 0.1);
+
+    --glass-bg: rgba(0, 0, 0, 0.05); 
+    --glass-border: rgba(0, 0, 0, 0.1);
+    
+    --input-bg: rgba(0, 0, 0, 0.05);
+    --input-border: rgba(0, 0, 0, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    background-blend-mode: multiply; 
+    transition: background-color 0.5s, color 0.5s;
+    min-height: 100vh;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+/* Painéis Gerais */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s, border 0.5s;
+}
+
+.glass-panel.dark-block {
+    background: var(--dark-block-bg);
+    border: 1px solid var(--dark-block-border);
+}
+
+/* Hero */
+.hero-section { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+.hero-content-wrapper { display: flex; align-items: center; gap: 20px; flex: 1; min-width: 300px; }
+.perfil-foto { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid var(--accent-color); filter: brightness(0.9); }
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 5px; }
+.role { color: var(--accent-color); font-weight: 400; margin-bottom: 15px; }
+.social-icons a { font-size: 1.5rem; color: var(--text-color); margin-right: 15px; transition: 0.3s; }
+.social-icons a:hover { color: var(--accent-color); }
+.hero-symbol { font-size: 6rem; color: var(--accent-color); opacity: 0.8; }
+
+/* Estilos Diversos */
+.quote-box { text-align: center; margin: 40px 0; padding: 0 20px; font-family: 'Merriweather', serif; font-style: italic; }
+cite { font-size: 0.85rem; color: var(--accent-color); text-transform: uppercase; display: block; margin-top: 10px;}
+
+h3 { border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 20px; display: inline-block; color: var(--accent-color); }
+
+/* Grids */
+.grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; text-align: center; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+.colored-icon { font-size: 1.8rem; margin-bottom: 10px; color: var(--accent-color); }
+.tag { background: var(--accent-color); color: var(--bg-color); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
+.project-card h4 { margin-bottom: 5px; color: var(--text-color); font-size: 1rem; }
+.project-card p { font-size: 0.8rem; opacity: 0.8; margin-bottom: 10px; }
+
+/* Escoteiro */
+.escoteiro-content { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.foto-container { text-align: center; }
+.escoteiro-grupo-foto { width: 180px; border-radius: 12px; border: 3px solid var(--accent-color); }
+.escoteiro-legenda { font-size: 0.85rem; font-style: italic; text-decoration: underline; color: var(--accent-color); margin-top: 5px; }
+.escoteiro-content p { flex: 1; min-width: 280px; }
+
+
+/* --- FORMULÁRIO (TEMA UNIFICADO) --- */
+.contact-panel {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-wrapper label {
+    display: block;
+    color: var(--text-color); /* Usa a cor do texto padrão */
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.input-wrapper input, 
+.input-wrapper select, 
+.input-wrapper textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg); /* Fundo translúcido do tema */
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+/* Foco no input */
+.input-wrapper input:focus,
+.input-wrapper select:focus,
+.input-wrapper textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.input-wrapper textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Ajuste da opção select para ficar legível no escuro */
+.input-wrapper select option {
+    background: #2F3E46; /* Cor sólida de fundo para opções */
+    color: #E0E0E0;
+}
+
+/* Botão Enviar */
+.btn-form-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-form-submit:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color); /* Texto vira escuro no hover */
+    box-shadow: 0 0 15px rgba(132, 169, 140, 0.4);
+}
+
+
+/* Footer & Toggle */
+footer { text-align: center; padding: 30px; background: rgba(0,0,0,0.8); border-radius: 16px 16px 0 0; margin-top: 40px; }
+#theme-toggle { position: fixed; top: 20px; right: 20px; background: transparent; border: 2px solid var(--text-color); color: var(--text-color); width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-section { flex-direction: column; text-align: center; }
+    .hero-content-wrapper { flex-direction: column; }
+    .hero-text { order: 2; }
+    .perfil-foto { margin-bottom: 15px; }
+    .hero-symbol { order: 1; margin-bottom: 20px; }
+    .escoteiro-content { flex-direction: column; text-align: center; }
+}
