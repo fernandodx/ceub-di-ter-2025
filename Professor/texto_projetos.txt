@@ -1,0 +1,54 @@
+ <h3>Criação de um Design System no Figma</h3>
+  <ul>
+    <li>
+      Elaboração de uma paleta de cores seguindo as guidelines de
+      identidade visual, incluindo cores primárias, secundárias e
+      terciárias.
+    </li>
+    <li>
+      Definição de tipografias e seus respectivos tamanhos e pesos.
+    </li>
+    <li>
+      Componentização de elementos como botões, menus e demais
+      componentes.
+    </li>
+    <li>
+      Utilização de variáveis para padronizar e otimizar o uso em
+      protótipos reais.
+    </li>
+    <li>
+      Criação de protótipos de alta fidelidade seguindo o princípio
+      mobile first.
+    </li>
+    <li>E muito mais...</li>
+  </ul>
+
+
+
+
+   <h3>Mini projeto - Lista de tarefas</h3>
+          <ul>
+            <li>
+              Desenvolvimento de uma aplicação de lista de tarefas utilizando
+              HTML, CSS e JavaScript.
+            </li>
+            <li>
+              Manipulação dinâmica do DOM para criação, atualização e remoção de
+              itens, implementando interações responsivas sem o uso de
+              frameworks.
+            </li>
+            <li>
+              Implementação de um CRUD completo em JavaScript puro, incluindo
+              validações básicas e organização do código em funções
+              reutilizáveis.
+            </li>
+            <li>
+              Estruturação da aplicação com foco em boas práticas, como
+              separação de responsabilidades e uso eficiente de eventos.
+            </li>
+            <li>
+              Possibilidade de expansão para uso de LocalStorage, permitindo
+              persistência dos dados no navegador.
+            </li>
+            <li>E muito mais...</li>
+          </ul>
