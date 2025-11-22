@@ -23,31 +23,32 @@
     <!--Header-->
     <header id="event-subscription">
       <div id="disclamer">
+        <img src="img/FotoFilipe.jpeg" alt="Foto de Filipe" class="profile-pic">
         <h2>Filipe Fialho Costa</h2>
         <p class="about-you">Desenvolvedor Web |  C# | IA</p>
       </div>
       <div id="subscription-form">
         <p>Entre em contato:</p>
-        <form action="">
+        <form id="contact-form">
           <div class="form-group">
             <label for="name">Nome</label>
-            <input type="text" placeholder="Digite seu nome" />
+            <input type="text" name="name" placeholder="Digite seu nome" required />
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" />
+            <input type="email" name="email" placeholder="Digite seu e-mail" required />
           </div>
           <div class="form-group">
             <label for="phone">WhatsApp</label>
-            <input type="text" placeholder="Digite seu WhatsApp" />
+            <input type="text" name="phone" placeholder="Digite seu WhatsApp" />
           </div>
           <div class="form-group">
             <label for="interest">Interesse</label>
             <select name="interest">
               <option value="" disabled selected>Selecione</option>
-              <option value="hering">Contratação</option>
-              <option value="freelance">Freelance</option>
-              <option value="mentoring">Mentoria</option>
+              <option value="Contratação">Contratação</option>
+              <option value="Freelance">Freelance</option>
+              <option value="Mentoria">Mentoria</option>
             </select>
           </div>
           <div class="form-group">
@@ -192,16 +193,44 @@
     </section>
     <!--FOOTER-->
     <footer id="footer">
-        <h3>Portifólio de Filipe Fialho</h3>
-        <p>Contatos:</p>
-        <p>
-          <a href="https://github.com/Filipe123-ceub">Github</a>
-            
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/filipe-fialho-27aa9a345/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpphVtQvFQK%2BoJae1XzmcNA%3D%3D">Linkedin</a>
-        </p>
-    </footer>
+    <h3>Portifólio de Filipe Fialho</h3>
+    <p style="margin-bottom: 20px;">Vamos conversar?</p>
+
+    <div class="social-container">
+        
+        <a href="https://github.com/Filipe123-ceub" target="_blank" class="social-card">
+            <i class="bi bi-github"></i>
+            <div class="social-info">
+                <strong>GitHub</strong>
+                <span>Meus códigos</span>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/filipe-fialho-27aa9a345/" target="_blank" class="social-card">
+            <img src="img/linkedin.png" alt="Logo LinkedIn">
+            <div class="social-info">
+                <strong>LinkedIn</strong>
+                <span>Conecte-se</span>
+            </div>
+        </a>
+
+        <a href="mailto:filipovesrd@gmail.com" class="social-card">
+            <i class="bi bi-envelope-fill"></i>
+            <div class="social-info">
+                <strong>E-mail</strong>
+                <span>Entre em contato</span>
+            </div>
+        </a>
+
+    </div>
+
+    <p style="margin-top: 40px; font-size: 0.8rem; opacity: 0.6;">
+        © 2025 Desenvolvido por Filipe Fialho
+    </p>
+</footer>
+    
+    
+  <script src="js/script.js"></script>
   </body>
 </html>
 

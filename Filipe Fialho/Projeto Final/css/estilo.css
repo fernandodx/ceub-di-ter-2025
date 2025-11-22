@@ -93,7 +93,7 @@
   /* Tecnologias */
   
   #key-technologys h2 {
-    background: var(--secondary);
+    background-color: #f5f5f5;
     color: var(--primary);
     text-align: center;
     padding: 2em;
@@ -238,15 +238,19 @@
 
   /* Rodapé */
 
-  #footer {
+ #footer {
     background-color: var(--secondary);
     text-align: center;
     color: var(--text-secondary);
-    height: 150px;
+    
+    /* MUDANÇAS IMPORTANTES AQUI: */
+    height: auto;        /* Deixa a altura livre para caberem os botões */
+    padding: 50px 20px;  /* Adiciona espaço em cima e embaixo (respiro) */
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
+    align-items: center; /* Garante que tudo fique centralizado na tela */
+}
 
   #footer a {
     color: var(--text-secondary);
@@ -257,4 +261,91 @@
     font-size: 1.8em;
     margin-bottom: 0.5em;
   }
+
+  /* Estilo para a div pai para garantir que tudo fique centralizado */
+#disclamer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    text-align: center;
+}
+
+/* Estilo da imagem de perfil */
+.profile-pic {
+    width: 150px;        /* Define um tamanho padrão */
+    height: 150px;       /* Garante que seja um quadrado para o círculo ficar perfeito */
+    object-fit: cover;   /* Garante que a imagem não fique esticada/achatada */
+    border-radius: 50%;  /* Transforma o quadrado em um círculo perfeito */
+    border: 3px solid #fff; /* (Opcional) Cria uma borda branca para destaque */
+    margin-bottom: 15px; /* Espaço entre a foto e o nome */
+    
+    /* Responsividade */
+    max-width: 100%;     
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* O visual do "Cartão" (Botão) */
+.social-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda leve */
+}
+
+/* Efeito ao passar o mouse no botão */
+.social-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px); /* Sobe um pouquinho */
+}
+
+/* Regra para Ícones de Fonte (ex: GitHub com bi-github) */
+.social-card i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+/* Regra para Imagens PNG (ex: LinkedIn com linkedin.png) */
+.social-card img {
+    width: 32px;   /* Define o mesmo tamanho visual do ícone de fonte */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Organização do Texto (Título e Descrição) */
+.social-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.social-info strong {
+    font-size: 1rem;
+}
+
+.social-info span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Animação na seção de tecnologias */
+.technology {
+    transition: transform 0.3s ease; /* Faz o movimento ser suave */
+    cursor: default; /* Mostra que é apenas visual, não um link clicável */
+}
+
+.technology:hover {
+    transform: translateY(-10px); /* O ícone "flutua" para cima */
+}
 
