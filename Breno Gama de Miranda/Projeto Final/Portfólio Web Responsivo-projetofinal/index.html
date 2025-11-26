@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breno Gama De Miranda</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <!-- FONTE -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+    </style>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="event-subscription">
+      <div id="disclamer">
+        <h2>Breno Gama de Miranda</h2>
+        <p class="about-you">Ciências da Computação 2° semestre | Comunicativo | Sociável | Prestativo</p>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div id="subscription-form">
+        <p>Entre em contato:</p>
+
+        <form id="myForm" action="https://formspree.io/f/manzokdp" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">WhatsApp</label>
+            <input type="text" name="phone" placeholder="Digite seu WhatsApp" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Interesse</label>
+            <select name="interest" required>
+              <option value="" disabled selected>Selecione</option>
+              <option value="contratacao">Contratação</option>
+              <option value="freelance">Freelance</option>
+              <option value="mentoria">Mentoria</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea name="message" placeholder="Escreva sua mensagem..." required></textarea>
+          </div>
+
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://seusite.com/sucesso.html">
+          <input type="submit" class="btn" value="Enviar" />
+        </form>
+      </div>
+    </header>
+
+    <!-- MODAL -->
+    <div class="modal-bg" id="modal">
+      <div class="modal">
+        <i class="bi bi-check-circle-fill"></i>
+        <h3>Mensagem enviada com sucesso!</h3>
+        <p>Entrarei em contato.</p>
+        <button class="btn-fechar" onclick="fecharModal()">Fechar</button>
+      </div>
+    </div>
+
+    <!--SECTION TECHNOLOGYS-->
+    <section id="key-technologys">
+      <h2>Conhecimentos</h2>
+      <div class="technologys">
+        <div class="technology">
+          <div id="technology-1" class="technology-img"></div>
+          <p><b>Github:</b> domínio dos principais comandos e fluxo Git.</p>
+        </div>
+
+        <div class="technology">
+          <div id="technology-2" class="technology-img"></div>
+          <p><b>Figma:</b> criação de protótipos e Design System completo.</p>
+        </div>
+
+        <div class="technology">
+          <div id="technology-3" class="technology-img"></div>
+          <p><b>HTML:</b> uso de tags semânticas e boas práticas.</p>
+        </div>
+
+        <div class="technology">
+          <div id="technology-4" class="technology-img"></div>
+          <p><b>CSS:</b> responsividade, variáveis e organização.</p>
+        </div>
+
+        <div class="technology">
+          <div id="technology-5" class="technology-img"></div>
+          <p><b>JavaScript:</b> manipulação do DOM e criação de interações.</p>
+        </div>
+
+        <div class="technology">
+          <div id="technology-6" class="technology-img"></div>
+          <p><b>Python:</b> Tenho conhecimentos em Python.</p>
+        </div>
+    </section>
+
+    <!--SECTION ABOUT-->
+    <section id="about">
+      <div id="about-id">
+        <img src="pfp.jpg" class="Profile-pic">
+        <div id="about-details">
+          <p>18 Anos</p>
+          <p>Solteiro</p>
+          <p>Padre Bernardo - GO</p>
+        </div>
+      </div>
+
+      <div id="about-description">
+        <h3>Facinado por tecnologia</h3>
+        <p>
+          Olá! Meu nome é Breno e atualmente curso o 2º semestre de Ciência da Computação.
+          Tenho experiência com C#, Python e lógica de programação. Atualmente sou estagiário no Tribunal de Justiça de Goiás (TJGO), trabalhando em rotinas administrativas e atendimento ao público. Meu foco é fortalecer meus conhecimentos em desenvolvimento e me tornar futuramente um desenvolvedor full stack.
+        </p>
+      </div>
+    </section>
+
+    <!--SECTION PROJECTS-->
+    <section id="projects">
+      <div class="project">
+        <img src="projeto/Logo projetos.png" />
+        <div class="project-description">
+          <h3>Projetos Profissionais e Contribuições Relevantes</h3>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-description">
+          <h3>Criação de um Design System no Figma</h3>
+          <ul>
+            <li>Criação de uma paleta de cores alinhada à identidade visual.</li>
+            <li>Definição de fontes, tamanhos e pesos tipográficos.</li>
+            <li>Criação de componentes reutilizáveis (botões, menus, inputs...).</li>
+            <li>Uso de variáveis para padronização e escalabilidade.</li>
+            <li>Protótipos de alta fidelidade com abordagem mobile first.</li>
+          </ul>
+        </div>
+        <img src="projeto/projeto1.png" />
+      </div>
+
+      <div class="project">
+        <img src="projeto/projeto2.png" />
+        <div class="project-description">
+          <h3>Projeto atividade-4 Pagina de Filme Favorito</h3>
+          <ul>
+            <li>Estrutra em HTML bem organizada</li>
+            <li>Estilos em CSS paleta + variaveis</li>
+            <li>Banner de impacto com imagem + gradiente</li>
+            <li>Componentização com "cards"</li>
+            <li>Responsividade media queries</li>
+            <li>Observação: esta imagem é uma ilustração e não representa o layout final da página.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer">
+      <h3>Portfólio de Breno Gama de Miranda</h3>
+      <p>Contatos</p>
+
+      <p><a href="https://github.com/brenogamademiranda/DBI-CEUB.git">Meu GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/breno-gama-de-miranda-b9766a2a0">Meu LinkedIn</a></p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+      const form = document.getElementById('myForm');
+      const modal = document.getElementById('modal');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(response => {
+          if (response.ok) {
+            modal.style.display = 'flex';
+            form.reset();
+          }
+        });
+      });
+
+      function fecharModal() {
+        modal.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
