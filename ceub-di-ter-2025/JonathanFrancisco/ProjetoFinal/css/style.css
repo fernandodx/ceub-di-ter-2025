@@ -1,0 +1,89 @@
+:root{
+    --primary: #8abeb9;
+    --secondary: #305669;
+    --text-color: #f5f5f5;
+    --text-secondary: #87e5cd;
+    --text-tertiary: #c1785a;
+
+}
+
+*{
+    font-family: Unbounded;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#event-subscription{
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)), url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh; /* Ocupa 85% da altura da tela visível */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+#disclamer h2{
+    color: var(--primary);
+}
+
+#disclamer .about-you{
+    font-size: 1.2em;
+    max-width: 350px;
+    font-weight: bold;
+}
+
+#subscription-form{
+    background-color: var(--secondary);
+    padding: 1em;
+    max-width: 25%;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input
+.form-group select
+.form-group textarea{
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px 12px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+

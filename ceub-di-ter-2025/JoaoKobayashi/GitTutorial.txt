@@ -1,0 +1,33 @@
+CLONAR O GIT DE UM REPOSITÓRIO DO GITHUB PARA UM DIRETÓRIO NA MÁQUINA
+
+abir cmd
+
+digitar: cd *caminho da pasta*
+
+*isso abre a pasta no cmd*
+
+copiar a url do repositório no GitHub
+
+(se for por https, irá pedir login e senha toda vez. Usando SSH, vai direto. Só usar em computador pessoal)
+
+comando: git clone *url*
+
+
+
+
+
+abrir cmd
+
+digitar: cd *caminho da pasta CLONADA* 			-- tem que entrar na pasta que foi clonada
+
+comando: git add . 					-- toda aula
+
+comando: git commit -m "comentário do commit"		-- commit -> "salvar" os arquivos 
+
+
+-- *git status* mostra a situação atual do git entre os comandos
+
+
+por fim
+
+git push						-- manda os arquivos para a núvem
