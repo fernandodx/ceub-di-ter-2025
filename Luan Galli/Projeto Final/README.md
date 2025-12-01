@@ -11,3 +11,5 @@ Projeto final Criação de um WEB Portifólio
 * **/img** Imagens usadas para o projeto.
 * **/script** Código-fonte em JavaScript.
 * **/style** Código estilo do projeto.
+
+**Link para o site online:** [Clica aqui para ver o site](https://l7-galli.github.io/Port-galli/)

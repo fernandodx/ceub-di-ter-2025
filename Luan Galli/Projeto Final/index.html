@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Profissional</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style/style.css">
-    
+
     <script defer src="script/script.js"></script>
 </head>
+
 <body>
 
     <header>
@@ -31,13 +35,10 @@
 
     <section id="slides">
         <div class="video-container">
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/AbM7e-KGVxE?si=tF58PLsQ1Hd2cXIK" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AbM7e-KGVxE?si=tF58PLsQ1Hd2cXIK"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
         </div>
     </section>
@@ -55,10 +56,12 @@
             <div class="sobre-texto">
                 <h2>Sobre Mim</h2>
                 <p>
-                    Olá! Meu nome é Luan Galli, tenho 23 anos, nasci na Ceilândia com minha família e tenho uma noiva incrível. 
+                    Olá! Meu nome é Luan Galli, tenho 23 anos, nasci na Ceilândia com minha família e tenho uma noiva
+                    incrível.
                     <br><br>
-                    Atualmente atuo no segmento público, onde tenho desenvolvido competências e habilidades em gestão. 
-                    Sou entusiasta e pesquisador da tecnologia da informação, principalmente aplicada em empresas privadas e públicas. 
+                    Atualmente atuo no segmento público, onde tenho desenvolvido competências e habilidades em gestão.
+                    Sou entusiasta e pesquisador da tecnologia da informação, principalmente aplicada em empresas
+                    privadas e públicas.
                     Tenho a ambição em contribuir com a inovação e o crescimento tecnológico.
                 </p>
             </div>
@@ -99,14 +102,17 @@
             <div class="projeto">
                 <img src="img/Banco de dados IMG.png" alt="Projeto de Modelagem de Banco de Dados">
                 <h3>Modelagem de Banco de Dados</h3>
-                <p>Projeto acadêmico focado em técnicas de modelagem, entidade-relacionamento e normalização com Oracle Data Modeler.</p>
+                <p>Projeto acadêmico focado em técnicas de modelagem, entidade-relacionamento e normalização com Oracle
+                    Data Modeler.</p>
                 <a href="https://github.com/L7-Galli/DBI-CEUB" target='_blank' class="botao">Ver Projeto</a>
             </div>
             <div class="projeto">
                 <img src="img/projeto_2.png" alt="Sistema de Tarefas">
                 <h3>Sistema de tarefas</h3>
-                <p>Sistema criado no curso de desenvolvimento de interfaces para otimizar e organizar tarefas diárias.</p>
-                <a href="https://github.com/L7-Galli/ceub-di-ter-2025/tree/main/Luan%20Galli/Atividades/Atividade%205" target="_blank" class="botao">Ver Projeto</a>
+                <p>Sistema criado no curso de desenvolvimento de interfaces para otimizar e organizar tarefas diárias.
+                </p>
+                <a href="https://github.com/L7-Galli/ceub-di-ter-2025/tree/main/Luan%20Galli/Atividades/Atividade%205"
+                    target="_blank" class="botao">Ver Projeto</a>
             </div>
             <div class="projeto">
                 <img src="img/bi.jpeg" alt="Projeto 3">
@@ -117,16 +123,39 @@
         </div>
     </section>
 
-    <section id="contato">
+    <footer id="contato">
         <h2>Fale Comigo</h2>
-        <div class="redes-sociais">
-            <a href="https://wa.me/5561994355542" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.instagram.com/l7_galli?igsh=azVhZDd0YXRmdTd0&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/luangalli44/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/L7-Galli" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="mailto:luan.galli@sempreceub.com"><i class="bi bi-envelope-paper"></i></a>
+        <div class="contato-container">
+            <form id="form-contato">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
+                </div>
+
+                <button type="submit" class="botao">Enviar E-mail</button>
+            </form>
+
+            <div class="redes-sociais">
+                <h3>Ou encontre-me em:</h3>
+                <a href="https://wa.me/5561994355542" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/luangalli44/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/L7-Galli" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/l7_galli?igsh=azVhZDd0YXRmdTd0&utm_source=qr" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+            </div>
         </div>
-    </section>
+    </footer>
 
 </body>
+
 </html>

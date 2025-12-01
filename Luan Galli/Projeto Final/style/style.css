@@ -4,7 +4,8 @@
 :root {
     --primary: #333;
     --secondary: #f4f4f4;
-    --accent: #9e9e9e;      /* Cor dos destaques/botões */
+    --accent: #9e9e9e;
+    /* Cor dos destaques/botões */
     --accent-hover: #9d61e2;
     --text-light: white;
     --bg-dark: #2a2a2a;
@@ -29,7 +30,8 @@ header {
     background-color: var(--primary);
     padding: 15px 0;
     text-align: center;
-    position: sticky; /* Opcional: mantém o menu no topo ao rolar */
+    position: sticky;
+    /* Opcional: mantém o menu no topo ao rolar */
     top: 0;
     z-index: 100;
 }
@@ -38,7 +40,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Garante que não quebre em telas muito pequenas */
+    flex-wrap: wrap;
+    /* Garante que não quebre em telas muito pequenas */
 }
 
 nav ul li {
@@ -66,12 +69,14 @@ nav ul li a:hover {
 
 .video-container {
     position: relative;
-    padding-bottom: 30%; /* Proporção widescreen */
+    padding-bottom: 30%;
+    /* Proporção widescreen */
     height: 0;
     overflow: hidden;
     max-width: 60%;
     margin: auto;
-    border-radius: 10px; /* Acabamento arredondado */
+    border-radius: 10px;
+    /* Acabamento arredondado */
 }
 
 .video-container iframe {
@@ -86,7 +91,7 @@ nav ul li a:hover {
 /* Hero (Home/Apresentação) */
 /* ---------------------- */
 .hero {
-    background: linear-gradient(to right, black, rgb(61, 61, 61),rgb(248, 209, 209) , silver);
+    background: linear-gradient(to right, black, rgb(61, 61, 61), white, silver);
     color: var(--text-light);
     text-align: center;
     padding: 60px 20px;
@@ -124,15 +129,17 @@ nav ul li a:hover {
     gap: 40px;
     max-width: 900px;
     margin: auto;
-    flex-wrap: wrap; /* Ajusta para celular se necessário */
+    flex-wrap: wrap;
+    /* Ajusta para celular se necessário */
 }
 
 .sobre-container img {
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Totalmente redondo */
+    border-radius: 50%;
+    /* Totalmente redondo */
     object-fit: cover;
-    box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
     border: 3px solid var(--accent);
 }
 
@@ -144,24 +151,28 @@ nav ul li a:hover {
 .sobre-texto h2 {
     margin-bottom: 15px;
     font-size: 2em;
-    font-family: serif; /* Mantido do original */
-    color: var(--accent);
+    font-family: serif;
+    /* Mantido do original */
+    color: rgb(211, 211, 211);
 }
 
 /* ---------------------- */
 /* Seções de Projetos (Geral e Acadêmico) */
 /* ---------------------- */
-#projetos, #projetos-academicos {
+#projetos,
+#projetos-academicos {
     padding: 50px 20px;
     color: var(--text-light);
 }
 
 #projetos {
-    background-color: #222; /* Cinza bem escuro */
+    background-color: #222;
+    /* Cinza bem escuro */
 }
 
 #projetos-academicos {
-    background-color: var(--bg-dark); /* Um tom diferente */
+    background-color: var(--bg-dark);
+    /* Um tom diferente */
 }
 
 .titulo-projeto h2 {
@@ -175,15 +186,17 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Permite que os cards desçam em telas menores */
+    flex-wrap: wrap;
+    /* Permite que os cards desçam em telas menores */
 }
 
 .projeto {
     background: dimgray;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    width: 300px; /* Largura fixa para os cards ficarem iguais */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    /* Largura fixa para os cards ficarem iguais */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +218,8 @@ nav ul li a:hover {
 .projeto p {
     font-size: 0.9em;
     margin-bottom: 15px;
-    flex-grow: 1; /* Empurra o botão para baixo se o texto for curto */
+    flex-grow: 1;
+    /* Empurra o botão para baixo se o texto for curto */
 }
 
 /* Botões */
@@ -225,9 +239,6 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* ---------------------- */
-/* Seção Contato */
-/* ---------------------- */
 #contato {
     background-color: var(--primary);
     color: var(--text-light);
@@ -256,5 +267,51 @@ nav ul li a:hover {
 
 .redes-sociais a:hover {
     transform: scale(1.2);
-    color: var(--accent);
+    color: rgb(17, 105, 221);
+}
+
+/* Ajuste para o formulário ficar centralizado */
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#form-contato {
+    background-color: var(--bg-dark);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    /* Textos das labels à esquerda */
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 1em;
+}
+
+/* Ajuste visual para as redes sociais ficarem abaixo do form */
+.redes-sociais h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: var(--text-light);
 }
