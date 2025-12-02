@@ -12,4 +12,7 @@ Este diretório contém todas as atividades e exercícios propostos ao longo da 
 | --------------- | ----------- | --------------- |
 | Atividade 1     | Finalizado  | 12/08/2025      |
 | Atividade 2     | Finalizado  | 19/08/2025      |
+| Atividade 3     | Finalizado  | 02/12/2025      |
+| Atividade 4     | Finalizado  | 02/12/2025      |
 | Atividade 5     | Finalizado  | 04/11/2025      |
+
