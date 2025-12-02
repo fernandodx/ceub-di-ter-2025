@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Bernardes</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header id="event-subscription">
+      <div id="disclamer">
+        <img src="img/projetos/leandro.jpg" alt="Foto de perfil de Leandro Bernardes" id="profile-picture" />
+        <h2>Leandro Bernardes</h2>
+        <p class="about-you">Tech Enthusiast | Aprendedor | Front-end em Formação</p>
+      </div>
+      <div id="subscription-form">
+        <p>Entre em contato:</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp</label>
+            <input type="text" id="phone" name="phone" placeholder="Digite seu WhatsApp" />
+          </div>
+          <div class="form-group">
+            <label for="interest">Interesse</label>
+            <select name="interest" id="interest">
+              <option value="" disabled selected>Selecione</option>
+              <option value="Contratação">Contratação</option>
+              <option value="Freelance">Freelance</option>
+              <option value="Mentoria">Mentoria</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Escreva sua mensagem..."
+            ></textarea>
+          </div>
+
+          <input type="submit" class="btn" value="Enviar" />
+        </form>
+      </div>
+    </header>
+    <section id="key-technologys">
+      <h2>Tecnologias</h2>
+      <div class="technologys">
+        <div class="technology">
+          <div id="technology-1" class="technology-img"></div>
+          <p>
+            <b>Github:</b> conhecimento basico nosc comandos CLI do GITHUB.
+          </p>
+        </div>
+        <div class="technology">
+          <div id="technology-2" class="technology-img"></div>
+          <p>
+            <b>Figma:</b> criação de protótipos com Design System integrado com
+            variáveis de cor e componentização de layouts.
+          </p>
+        </div>
+        <div class="technology">
+          <div id="technology-3" class="technology-img"></div>
+          <p>
+            <b>HTML:</b> criação de páginas utilizando HTML nçao tão complexaes, mas bastante funcionais.
+          </p>
+        </div>
+        <div class="technology">
+          <div id="technology-4" class="technology-img"></div>
+          <p>
+            <b>CSS:</b> estilização de páginas utilizando CSS com uso de
+            variáveis e responsividade por meio de media-query.
+          </p>
+        </div>
+        <div class="technology">
+          <div id="technology-5" class="technology-img"></div>
+          <p>
+            <b>Java Script:</b> manipulação do DOM do HTML atráves de JS,
+            utilizando as interfaces de listener, aplicação de estilos por meio
+            de lógica.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div id="about-id">
+        <i class="bi bi-person-circle"></i>
+        <div id="about-details">
+          <p>19 Anos</p>
+          <p>Solteiro</p>
+          <p>Brasília - DF</p>
+        </div>
+      </div>
+      <div id="about-description">
+        <h3>Buscador de Soluções</h3>
+        <p>
+          Tenho 19 anos, vivido sempre perto da tecnologia me interessei pela área muito cedo, sempre fazendo o 
+          manuzeio de computadores, hardwares e etc, hoje em 2025 busco aprimorar meus conhecimantos cursando 
+          CCO (Ciência da Computação) para buscar novas oportunidades.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="project">
+        <img src="img/projetos/logo_projects.png" id="projeto_logo" />
+        <div class="project-description">
+          <h3>Projetos Profissionais e Contribuições Relevantes</h3>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-description">
+          <h3>Criação de um Design System no Figma</h3>
+          <ul>
+            <li>
+              Elaboração de uma paleta de cores seguindo as guidelines de
+              identidade visual, incluindo cores primárias, secundárias e
+              terciárias.
+            </li>
+            <li>
+              Definição de tipografias e seus respectivos tamanhos e pesos.
+            </li>
+            <li>
+              Componentização de elementos como botões, menus e demais
+              componentes.
+            </li>
+            <li>
+              Utilização de variáveis para padronizar e otimizar o uso em
+              protótipos reais.
+            </li>
+            <li>
+              Criação de protótipos de alta fidelidade seguindo o princípio
+              mobile first.
+            </li>
+            <li>E muito mais...</li>
+          </ul>
+        </div>
+        <img src="img/projetos/projeto_figma.png" id="logo_projeto_1" />
+      </div>
+      <div class="project">
+        <img src="img/projetos/projeto_2.png" id="logo_projeto_2" />
+        <div class="project-description">
+          <h3>Mini projeto - Lista de tarefas</h3>
+          <ul>
+            <li>
+              Criação de uma interface simples e intuitiva.
+            </li>
+            <li>
+              Implementação de funcionalidades para adicionar, editar e excluir tarefas.
+            </li>
+            <li>
+              Criação de uma pagina em HTML e estilização com CSS.
+            </li>
+            <li>E muito mais...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h3>Portifólio de Leandro Bernardes</h3>
+      <div id="contact-links"> 
+        <p>
+          <a href="https://github.com/BernardesSilva" target="_blank" aria-label="Github de Leandro Bernardes">
+            <i class="bi bi-github"></i>
+            Github
+          </a>
+        </p>
+        <p>
+          <a href="mailto:leandrobernardesqsc@gmail.com" aria-label="Email de Leandro Bernardes">
+            <i class="bi bi-envelope-fill"></i>
+            leandrobernardesqsc@gmail.com
+          </a>
+        </p>
+      </div>
+      <p class="copyright">&copy; 2025 Leandro Bernardes | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
