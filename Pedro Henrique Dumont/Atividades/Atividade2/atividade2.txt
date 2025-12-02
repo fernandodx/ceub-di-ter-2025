@@ -1,0 +1,29 @@
+1. Paleta de Cores
+
+Primária: #FF7F00 (Laranja) – transmite energia, confiança e modernidade.
+
+Secundária: #004AAD (Azul Escuro) – passa segurança e estabilidade, importante para apps financeiros.
+
+Destaque: #00C853 (Verde) – indica sucesso, aprovação ou crescimento financeiro.
+
+Fundo: #F5F5F5 (Cinza Claro) – neutro, facilita a leitura e não cansa a vista.
+
+Texto: #212121 (Preto Suave) – alto contraste e ótima legibilidade.
+
+Justificativa:
+A escolha das cores busca transmitir confiança e clareza, elementos essenciais para um aplicativo financeiro. O laranja cria identidade visual, o azul reforça segurança, o verde destaca informações positivas, e o fundo neutro garante conforto visual.
+
+2. Tipografia
+
+Fonte primária (títulos): Poppins – moderna, geométrica e elegante, destaca títulos de forma clara.
+
+Fonte secundária (textos de apoio): Roboto – altamente legível em telas digitais e combina bem com Poppins.
+
+Justificativa:
+A tipografia foi escolhida para garantir legibilidade, mesmo em telas pequenas, e criar uma identidade visual consistente e moderna. Títulos chamam atenção com Poppins, enquanto Roboto facilita a leitura de informações detalhadas.
+
+3. Estudo de Guidelines – Material Design (Google)
+
+O Material Design é um sistema de design criado pelo Google, que organiza elementos visuais e interação com base em princípios de clareza, hierarquia e consistência. Um princípio importante é a tipografia responsiva, que ajusta automaticamente o tamanho e o peso das fontes de acordo com o tamanho da tela, garantindo legibilidade em smartphones, tablets e desktops. Além disso, o Material Design recomenda o uso de cores para hierarquizar informações e feedbacks visuais, ícones claros e espaçamentos consistentes para melhorar a usabilidade e a estética.
+
+No FinSmart, esse princípio poderia ser aplicado ajustando automaticamente os títulos e textos de acordo com a tela do usuário, mantendo contraste suficiente entre texto e fundo, e destacando cores de feedback como verde para transações aprovadas ou vermelho para erros. O espaçamento consistente e os ícones intuitivos aumentariam a clareza e a rapidez na navegação, tornando o app acessível e agradável.
