@@ -1,0 +1,52 @@
+/* 1. Estilos Básicos para o Corpo (body) */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte limpa */
+    background-color: #f4f4f9; /* Cor de fundo levemente cinza */
+    color: #333; /* Cor do texto principal */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0;
+}
+
+/* 2. Centralizar e Limitar o Conteúdo Principal (main) */
+main {
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    margin: 40px auto; /* Centraliza o bloco principal na tela (40px de margem em cima/baixo, 'auto' nas laterais) */
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    border-radius: 8px; /* Cantos levemente arredondados */
+}
+
+/* 3. Estilos para o Cabeçalho (header) */
+header {
+    background-color: #c00; /* Cor vermelha para Velozes e Furiosos */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0; /* Remove margem padrão do h1 */
+}
+
+/* 4. Estilo para o Pôster */
+img {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 20px auto; /* Centraliza a imagem */
+    border: 3px solid #333; /* Borda escura para emoldurar o pôster */
+    border-radius: 4px;
+}
+
+/* 5. Estilos para as Seções */
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc; /* Linha pontilhada para separar seções */
+}
+
+/* 6. Estilos para a Lista (Elenco) */
+ul {
+    list-style-type: square; /* Mudar o marcador da lista para um quadrado */
+    padding-left: 20px;
+}
