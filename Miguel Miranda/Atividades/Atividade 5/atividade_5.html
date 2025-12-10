@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas (atividade)</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .input-area {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #tarefaInput {
+      padding: 8px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    li {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    li.concluida {
+      text-decoration: line-through;
+      color: gray;
+    }
+    
+    li button {
+        background: #ff4d4d;
+        border: none;
+        color: white;
+        border-radius: 4px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+      const tarefaInput = document.getElementById("tarefaInput");
+      const btnAdicionar = document.getElementById("btnAdicionar");
+      const listaTarefas = document.getElementById("listaTarefas");
+
+      function criarNovaTarefa() {
+        const textoTarefa = tarefaInput.value.trim();
+
+        if (textoTarefa === "") {
+          alert("Por favor, digite uma tarefa.");
+          return;
+        }
+
+        const li = document.createElement("li");
+        
+        li.textContent = textoTarefa;
+        li.addEventListener("click", function() {
+          li.classList.toggle("concluida");
+        });
+
+        const btnRemover = document.createElement("button");
+        btnRemover.textContent = "X";
+
+        btnRemover.addEventListener("click", function(event)
+        {
+          event.stopPropagation(); 
+          li.remove();
+        });
+
+        li.appendChild(btnRemover);
+
+        listaTarefas.appendChild(li);
+
+        tarefaInput.value = "";
+        tarefaInput.focus();
+      }
+
+      btnAdicionar.addEventListener("click", criarNovaTarefa);
+
+      tarefaInput.addEventListener("keypress", function(event) 
+      {
+        if (event.key === "Enter") {
+          criarNovaTarefa();
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Minha Lista de Tarefas</h1>
+
+  <div class="input-area">
+    <input type="text" id="tarefaInput" placeholder="Digite uma tarefa..." />
+    <button id="btnAdicionar">Adicionar</button>
+  </div>
+
+  <ul id="listaTarefas">
+    </ul>
+</body>
+</html>
