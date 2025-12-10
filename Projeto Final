@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucas Daoura</title>
+    
+    <link rel="stylesheet" href="estilo.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfólio de Lucas Daoura</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="apresentacao" class="container">
+            <h2>Apresentação</h2>
+            <div class="apresentacao-conteudo">
+                <p>Olá! Sou Lucas de Castro Mota Daoura, um desenvolvedor júnior apaixonado por criar soluções web inovadoras. Minha jornada na programação começou com HTML, CSS e JavaScript. Este portfólio exibe minhas competências e projetos.</p>
+                <img src="img/dev_illustration.png" alt="Ilustração de Desenvolvimento Web" class="ilustracao-dev">
+            </div>
+            </section>
+
+        <section id="projetos" class="container">
+            <h2>Projetos Destacados</h2>
+            <div class="projeto-grid">
+                
+                <div class="projeto-card">
+                    <h3>App de Gestão Financeira</h3>
+                    <p>Sistema front-end para controle de despesas e receitas. Desenvolvido com **JavaScript Puro**.</p>
+                    <p class="contato-projeto">Entre em contato que envio tudo</p>
+                </div>
+                
+                <div class="projeto-card">
+                    <h3>Landing Page Responsiva</h3>
+                    <p>Landing page moderna criada utilizando **HTML5** e **CSS Flexbox/Grid**.</p>
+                    <p class="contato-projeto">Entre em contato que envio tudo</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="experiencia" class="container">
+            <h2>Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="job-item">
+                    <h3>Estágio em Desenvolvimento Front-end - Tech Solutions LTDA</h3>
+                    <p class="periodo">Junho de 2024 - Presente</p>
+                    <ul>
+                        <li>Manutenção e implementação de novas funcionalidades em HTML e CSS.</li>
+                        <li>Desenvolvimento de scripts JavaScript para validação de formulários.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="container">
+            <h2>Tecnologias</h2>
+            <div class="tech-grid">
+                <div class="card">
+                    <i class="fab fa-html5 fa-3x"></i> 
+                    <h3>HTML5</h3>
+                    <p>Estrutura semântica e acessível.</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-css3-alt fa-3x"></i> 
+                    <h3>CSS3</h3>
+                    <p>Layouts modernos com Flexbox e Grid.</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-js-square fa-3x"></i> 
+                    <h3>JavaScript</h3>
+                    <p>Lógica de programação e manipulação do DOM.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Fale Comigo</h2>
+            <p>Você pode entrar em contato diretamente por e-mail.</p>
+            <div class="contato-info">
+                <i class="fas fa-envelope"></i> 
+                **Email:** <a href="mailto:lucas.daoura123@gmail.com">lucas.daoura123@gmail.com</a>
+            </div>
+            
+            <form id="contatoForm">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lucas Daoura. Feito com HTML, CSS e JavaScript.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
+
+
+
+CSS
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fundo cinza claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: block;
+}
+
+/* --- 2. HEADER E FOOTER --- */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* --- 3. LAYOUT DE GRIDS (Projetos e Tecnologias) --- */
+.tech-grid, .projeto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card, .projeto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card i {
+    color: #007bff;
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+/* --- 4. SEÇÃO DE EXPERIÊNCIA --- */
+.job-item {
+    background-color: #fff;
+    border-left: 4px solid #007bff;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.periodo {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* --- 5. SEÇÃO DE CONTATO E FORMULÁRIO --- */
+#contato {
+    background-color: #e9ecef;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.contato-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contatoForm {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#contatoForm input, #contatoForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contatoForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+
+JS
+document.addEventListener("DOMContentLoaded", function() {
+    const contatoForm = document.getElementById("contatoForm");
+
+    if (contatoForm) {
+        contatoForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const formData = new FormData(event.target);
+            const nome = formData.get("nome");
+            const email = formData.get("email");
+            const mensagem = formData.get("mensagem"); 
+
+            const assunto = "Nova Mensagem através do Portfólio";
+            
+            const body = `
+Nome: ${nome}
+E-mail: ${email}
+
+--- Mensagem ---
+${mensagem}
+`;
+            // Define o link para abrir o cliente de e-mail padrão do usuário
+            const mailtoLink = `mailto:lucas.daoura123@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
+            
+            // Abre o link
+            window.location.href = mailtoLink; 
+            
+            // Feedback ao usuário
+            alert("Obrigado pelo seu contato! Seu cliente de e-mail será aberto para enviar a mensagem.");
+        });
+    }
+});
