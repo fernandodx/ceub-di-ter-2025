@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script>
+        window.onload = function(){
+
+console.log()
+const input = document.getElementById("tarefaInput");
+const btnAdicionar = document.getElementById("btnAdicionar");
+const lista =document.getElementById("listaTarefas");
+
+btnAdicionar.addEventListener("click", () => {
+    //recuperar o valor do campo text
+    const texto = input.value.trim();
+
+
+    //Criar um elemento da minha lista
+    const li = document.createElement("li");
+
+    //Add o valor do input na list
+    li.textContent = texto;
+
+    li.addEventListener("click", ()=> {
+        li.classList.toggle("concluida");
+    });
+    //Criar um botão de executar
+    const btnRemover = this.document.createElement("Button")
+    btnRemover.textContent = "Remover";
+    btnRemover.style.marginLeft = "10px";
+    btnRemover.classList.add("fechar");
+    btnRemover.addEventListener("click", (event)=> {
+        //Deletar o item
+        li.remove();
+    })
+
+    //Adiciona o item na lista
+    lista.appendChild(li);
+    //Add o btão de remover
+    li.appendChild(btnRemover);
+
+   //Limpa o input
+    input.value="";
+
+});
+}
+
+    </script>
+    <style>
+        body{
+            font-family: 'AREAL';
+            background-color: rgb(165, 33, 110);
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(221, 218, 214);
+        }
+        .input-area{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #tarefaInput{
+            padding: 8px;
+            width:200px;
+        }
+        #btnAdicionar{
+            padding:8px 12px;
+            margin-left: 5px;
+            background-color: rgb(224, 165, 188);
+            border:rgb(20, 20, 20)2px ;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        ol{
+            padding: 0px 200px;
+        }
+        li{
+            background-color: rgb(219, 108, 212);
+            color: rgb(0, 0, 0);
+            margin: 8px 0;
+            padding:10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .fechar{
+            background-color: rgb(233, 225, 233);
+        }
+        li.concluida{
+            text-decoration: line-through;
+            color: aliceblue;
+        }
+    </style>
+    <title>To do</title>
+</head>
+<body>
+    <h1>Minha lista de tarefas</h1>
+    
+    <div class="input-area">
+        <input type="text" 
+               id="tarefaInput" 
+               placeholder="Digite sua tarefa!">
+    <button id="btnAdicionar"> Adicionar</button>
+
+    </div>
+
+    <ol id="listaTarefas"></ol>
+</body>
+</html>
