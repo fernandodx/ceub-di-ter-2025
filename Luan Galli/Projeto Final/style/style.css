@@ -1,0 +1,317 @@
+/* ---------------------- */
+/* Variáveis e Reset Geral */
+/* ---------------------- */
+:root {
+    --primary: #333;
+    --secondary: #f4f4f4;
+    --accent: #9e9e9e;
+    /* Cor dos destaques/botões */
+    --accent-hover: #9d61e2;
+    --text-light: white;
+    --bg-dark: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+/* ---------------------- */
+/* Cabeçalho (Header) */
+/* ---------------------- */
+header {
+    background-color: var(--primary);
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    /* Opcional: mantém o menu no topo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Garante que não quebre em telas muito pequenas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+}
+
+/* ---------------------- */
+/* Seção de Vídeo */
+/* ---------------------- */
+#slides {
+    padding: 50px 0;
+    background-color: #1c1c1e;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%;
+    /* Proporção widescreen */
+    height: 0;
+    overflow: hidden;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    /* Acabamento arredondado */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------- */
+/* Hero (Home/Apresentação) */
+/* ---------------------- */
+.hero {
+    background: linear-gradient(to right, black, rgb(61, 61, 61), white, silver);
+    color: var(--text-light);
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+/* ---------------------- */
+/* Seção Sobre Mim */
+/* ---------------------- */
+#sobre {
+    padding: 60px 20px;
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+    /* Ajusta para celular se necessário */
+}
+
+.sobre-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* Totalmente redondo */
+    object-fit: cover;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--accent);
+}
+
+.sobre-texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: serif;
+    /* Mantido do original */
+    color: rgb(211, 211, 211);
+}
+
+/* ---------------------- */
+/* Seções de Projetos (Geral e Acadêmico) */
+/* ---------------------- */
+#projetos,
+#projetos-academicos {
+    padding: 50px 20px;
+    color: var(--text-light);
+}
+
+#projetos {
+    background-color: #222;
+    /* Cinza bem escuro */
+}
+
+#projetos-academicos {
+    background-color: var(--bg-dark);
+    /* Um tom diferente */
+}
+
+.titulo-projeto h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: var(--text-light);
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Permite que os cards desçam em telas menores */
+}
+
+.projeto {
+    background: dimgray;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    /* Largura fixa para os cards ficarem iguais */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projeto h3 {
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    /* Empurra o botão para baixo se o texto for curto */
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.botao:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+#contato {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais a {
+    color: var(--text-light);
+    font-size: 2.5em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2);
+    color: rgb(17, 105, 221);
+}
+
+/* Ajuste para o formulário ficar centralizado */
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#form-contato {
+    background-color: var(--bg-dark);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    /* Textos das labels à esquerda */
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 1em;
+}
+
+/* Ajuste visual para as redes sociais ficarem abaixo do form */
+.redes-sociais h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: var(--text-light);
+}

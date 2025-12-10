@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tarefa.js"></script>
+    
+    <style>
+        body{
+            font-family: 'Times New Roman';
+            background: #E6E6E6 ;
+            padding: 20px;
+        }
+        
+        h1{
+            text-align: center;
+            color: black;
+        }
+
+        .input-area{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #tarefaInput{
+            padding: 8px;
+            width: 200px;
+
+        }
+        #btnAdicionar{
+            padding: 8px;
+            margin-left: 3px;
+            background: black;
+            color: #E6E6E6;
+            border: silver 2px solid;
+            border-radius: 45px;
+            cursor: pointer;
+        }
+
+        ol {
+            padding: 0px;
+            margin-right: 250px;
+            margin-left: 250px;
+        }
+
+        li{
+            background: #E6D9C9 ;
+            color:black;
+            margin: 8px 0;
+            padding:  10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            
+        }
+        
+        button{
+            padding: 5px;
+            margin-left: 5px;
+            background: black;
+            color: #E6E6E6;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        li.concluida{
+            text-decoration: line-through;
+            color: gray;
+            background-color: green;
+            
+        }
+    </style>
+    <title>To do</title>
+</head> 
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+
+    <div class="input-area">
+        <input type="text" 
+               id="tarefaInput" 
+               placeholder="Digite sua tarefa!">
+        <button id="btnAdicionar">Adicionar</button> 
+    </div>
+
+    <ol id="listaTarefas"> </ol>
+    
+</body>
+</html>
