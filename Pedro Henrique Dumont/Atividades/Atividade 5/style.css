@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .input-area {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #tarefaInput {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.concluida {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
