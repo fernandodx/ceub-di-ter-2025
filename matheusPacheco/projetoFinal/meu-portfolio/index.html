@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Web - Matheus Pacheco </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Portfólio - Matheus </div>
+        <ul>
+            <li><a href="#disclamer">Sobre</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header id="disclamer">
+        <div class="container header-content">
+            <div class="text-content">
+                <h1>Olá, sou Matheus Pacheco</h1>
+                <p>Estudante de Ciência da Computação e Desenvolvedor.</p>
+                <a href="#contato" class="btn">Entre em contato</a>
+            </div>
+            <div class="image-content">
+                <img src="img/perfil.jpg" alt="Foto de rosto de Matheus">
+            </div>
+        </div>
+    </header>
+
+    <section id="tecnologias" class="container">
+        <h2>Minhas Tecnologias</h2>
+        <div class="tech-grid">
+            <div class="card">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <h3>HTML5 Semântico</h3>
+                <p>Estruturação de páginas com foco em acessibilidade e SEO.</p>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <h3>CSS3 Responsivo</h3>
+                <p>Estilização moderna com Flexbox e Grid Layout.</p>
+            </div>
+            <div class="card">
+        <i class="fa-solid fa-code fa-3x"></i> 
+        
+        <h3>C# & .NET</h3>
+        <p>Desenvolvimento de aplicações Desktop e APIs RESTful robustas.</p>
+    </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container">
+        <h2>Fale Comigo</h2>
+        <form id="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem..."></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar E-mail</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="social-links">
+                <a href="https://github.com/mtpachecoo" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mtpachecoo/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:matheusalmeida13@hotmail.com" aria-label="E-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Desenvolvido por Matheus Pacheco de Almeida. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
