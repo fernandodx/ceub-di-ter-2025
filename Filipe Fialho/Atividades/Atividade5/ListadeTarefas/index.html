@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Tarefas (atividade)</title>
+
+  <!-- CSS direto no head -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .input-area {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #tarefaInput {
+      padding: 8px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    li button {
+      background: #ff6b6b;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-weight: bold;
+      flex-shrink: 0; /* Impede que o botão encolha */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 20px auto 0;
+    }
+
+    li {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li span {
+      cursor: pointer;      /* Indica que o texto é clicável */
+      flex-grow: 1;         /* Faz o texto ocupar o espaço disponível */
+      margin-right: 10px;   /* Dá um espaço antes do botão */
+    }
+
+    li.concluida {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+
+  <script>
+    // Espera o HTML carregar (DOM) antes de executar o script
+    document.addEventListener("DOMContentLoaded", function() {
+
+      
+      const inputTarefa = document.getElementById("tarefaInput");
+      const btnAdicionar = document.getElementById("btnAdicionar");
+      const listaTarefas = document.getElementById("listaTarefas");
+
+      
+      function adicionarTarefa() {
+        
+        const textoTarefa = inputTarefa.value.trim();
+
+    
+        if (textoTarefa === "") {
+            alert("Por favor, digite uma tarefa."); 
+            return;
+        }
+
+        
+        const li = document.createElement("li");
+
+        const spanTexto = document.createElement("span");
+        spanTexto.textContent = textoTarefa;
+        
+        
+        li.appendChild(spanTexto);
+
+        
+        spanTexto.addEventListener("click", function() {
+         
+          li.classList.toggle("concluida");
+        });
+
+        
+        const botaoRemover = document.createElement("button");
+        botaoRemover.textContent = "X"; // Define o texto
+
+     
+        botaoRemover.addEventListener("click", function() {
+          li.remove(); // Remove o item <li> inteiro da lista
+        });
+
+        
+        li.appendChild(botaoRemover);
+
+  
+        listaTarefas.appendChild(li);
+
+        
+        inputTarefa.value = "";
+        inputTarefa.focus();
+      }
+
+      
+      btnAdicionar.addEventListener("click", adicionarTarefa);
+
+      
+      inputTarefa.addEventListener("keypress", function(event) {
+        // Verifica se a tecla pressionada foi "Enter"
+        if (event.key === "Enter") {
+          // Chama a mesma função do clique no botão
+          adicionarTarefa();
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Minha Lista de Tarefas</h1>
+
+  <div class="input-area">
+    <input type="text" id="tarefaInput" placeholder="Digite uma tarefa..." />
+    <button id="btnAdicionar">Adicionar</button>
+  </div>
+
+  <ul id="listaTarefas"></ul>
+</body>
+</html>

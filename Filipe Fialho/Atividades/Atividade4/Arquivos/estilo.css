@@ -1,0 +1,102 @@
+/* Zera as margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Fundo com imagem da galáxia */
+    background-image: url('https://wallpapers.com/images/hd/avengers-endgame-galaxy-background-f5a9s6x1a7x1a7x1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0d0d15; /* Cor de fundo preta se a imagem falhar */
+    color: white;
+    
+    /* Centraliza tudo na tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.9); /* Sombra no texto */
+}
+
+/* Estilo do Cartão */
+.card {
+    background-color: rgba(20, 20, 30, 0.95); /* Fundo escuro e transparente */
+    width: 90%;
+    max-width: 850px;
+    margin: 40px 0;
+    border-radius: 15px;
+    display: flex; /* Coloca imagem e texto lado a lado */
+    overflow: hidden; /* Arredonda os cantos da imagem */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8); /* Sombra elegante atrás do card */
+}
+
+/* -- AQUI ESTÁ A CORREÇÃO DA IMAGEM -- */
+.card img {
+    width: 350px; /* Força a largura a ser 350px */
+    object-fit: cover; /* Corta a imagem se sobrar espaço, sem esticar */
+    display: block;
+}
+
+.info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2, h3 {
+    color: #dba2de; /* Roxo claro */
+    margin-bottom: 15px;
+}
+
+p, ul {
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Botão Vermelho */
+.botao {
+    display: inline-block;
+    background-color: #b71c1c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-start; /* Alinha o botão à esquerda */
+    transition: transform 0.2s;
+}
+
+.botao:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+    }
+    .card img {
+        width: 100%; /* Imagem ocupa a largura total no celular */
+        height: 300px;
+    }
+}
