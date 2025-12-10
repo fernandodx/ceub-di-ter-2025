@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Minha Lista de Tarefas (To-Do List)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .input-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #tarefaInput {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #034714e1;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00b345;
+        }
+        
+        /* Estilo específico para o botão Remover */
+        .remover-btn {
+            background-color: #dc3545;
+        }
+
+        .remover-btn:hover {
+            background-color: #c82333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        
+        /* Estilo para tarefas concluídas */
+        li.concluida {
+            text-decoration: line-through;
+            color: #888;
+            background: #e9e9e9;
+        }
+    </style>
+
+    <script>
+        // Quando o navegador terminar de carregar o HTML, execute o código
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // PASSO 1: Selecione os elementos do DOM
+            const tarefaInput = document.getElementById("tarefaInput");
+            const btnAdicionar = document.getElementById("btnAdicionar");
+            const listaTarefas = document.getElementById("listaTarefas");
+
+            // Função principal para adicionar a tarefa
+            function adicionarTarefa() {
+                // PASSO 2: Pegue o valor digitado e verifique se está vazio
+                const textoTarefa = tarefaInput.value.trim();
+
+                if (textoTarefa === "") {
+                    return; // Se estiver vazio, sai da função
+                }
+
+                // PASSO 3: Crie dinamicamente um <li>
+                const novoItem = document.createElement("li");
+                novoItem.textContent = textoTarefa;
+
+                // ----------------------------------------------------
+                // PASSO 4: Marcar a tarefa como concluída (Clique no item)
+                // ----------------------------------------------------
+                novoItem.addEventListener("click", function() {
+                    novoItem.classList.toggle("concluida");
+                });
+                
+                // ----------------------------------------------------
+                // PASSO 5: Criar um botão "Remover"
+                // ----------------------------------------------------
+                const botaoRemover = document.createElement("button");
+                botaoRemover.textContent = "Remover";
+                botaoRemover.classList.add("remover-btn");
+                
+                botaoRemover.addEventListener("click", function(event) {
+                    // Impede que o clique no botão ative o evento de clique do <li> (marcar como concluído)
+                    event.stopPropagation(); 
+                    
+                    // Remove o item <li> inteiro
+                    novoItem.remove(); 
+                });
+
+                // ----------------------------------------------------
+                // PASSO 6: Anexar o botão dentro do <li>
+                // ----------------------------------------------------
+                novoItem.appendChild(botaoRemover);
+                
+                // Anexa o novo <li> na lista <ul>
+                listaTarefas.appendChild(novoItem);
+                
+                // ----------------------------------------------------
+                // PASSO 7: Limpar o campo de texto e focar
+                // ----------------------------------------------------
+                tarefaInput.value = "";
+                tarefaInput.focus();
+            }
+
+            // PASSO 2 (Continuação): Adicione eventos para adicionar a tarefa
+            btnAdicionar.addEventListener("click", adicionarTarefa);
+
+            // Adiciona a funcionalidade de pressionar ENTER
+            tarefaInput.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    adicionarTarefa();
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+
+    <div class="input-area">
+        <input type="text" id="tarefaInput" placeholder="Digite uma tarefa..." />
+        <button id="btnAdicionar">Adicionar</button>
+    </div>
+
+    <ul id="listaTarefas"></ul>
+</body>
+</html>

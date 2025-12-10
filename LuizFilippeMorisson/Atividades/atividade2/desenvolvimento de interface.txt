@@ -1,0 +1,15 @@
+prompt cmd
+
+cd "caminho da pasta"
+
+copiar url do repositório github
+
+git clone url
+
+README dentro das pastas (GitHub não le pasta)
+ (cd ..) sai da pasta (cd nome da pasta, segue)
+
+COMANDO: git add. todos arquivos (especifica com nome do arquivo)
+comando: git status (mostra a situação do git)
+comando: git commit -m (flag) '' para comentário
+comando: git push (manda os arquivos para o GitHub)
