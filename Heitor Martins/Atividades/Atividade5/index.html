@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Tarefas (atividade)</title>
+
+  <!-- CSS direto no head -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .input-area {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #tarefaInput {
+      padding: 8px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li.concluida {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+
+  <!-- Aqui vai o roteiro para os alunos implementarem o JS -->
+  <script>
+    //  PASSO 1: Selecione os elementos do DOM
+    // - Selecione o campo de texto com id "tarefaInput"
+    // - Selecione o botão com id "btnAdicionar"
+    // - Selecione a lista <ul> com id "listaTarefas"
+
+    //  PASSO 2: Adicione um evento de clique no botão "Adicionar"
+    // - Use addEventListener("click", função...)
+    // - Dentro da função, pegue o valor digitado no input (use .value)
+    // - Use trim() para remover espaços extras
+    // - Se estiver vazio, não faça nada (return)
+
+    //  PASSO 3: Crie dinamicamente um <li>
+    // - Use document.createElement("li")
+    // - Coloque o texto da tarefa dentro do <li>
+    // - Adicione esse <li> dentro da lista (appendChild)
+
+    //  PASSO 4: Marcar a tarefa como concluída
+    // - Adicione um evento de clique no <li>
+    // - Quando clicado, use classList.toggle("concluida")
+    // - Isso vai aplicar ou remover a classe CSS que risca o texto
+
+    //  PASSO 5: Criar um botão "Remover"
+    // - Use document.createElement("button")
+    // - Defina o texto dele como "X"
+    // - Adicione um evento de clique nesse botão
+    // - Dentro desse evento, use li.remove() para apagar apenas esse item
+
+    //  PASSO 6: Anexar o botão dentro do <li>
+    // - Use li.appendChild(botaoRemover)
+
+    //  PASSO 7: Limpar o campo de texto
+    // - Depois de adicionar a tarefa, limpe o input (input.value = "")
+    // - Coloque o foco de volta no input (input.focus())
+
+  </script>
+</head>
+
+<body>
+  <h1>Minha Lista de Tarefas</h1>
+
+  <div class="input-area">
+    <input type="text" id="tarefaInput" placeholder="Digite uma tarefa..." />
+    <button id="btnAdicionar">Adicionar</button>
+  </div>
+
+  <ul id="listaTarefas"></ul>
+</body>
+</html>

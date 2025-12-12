@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pabllo Leviev — Portfólio</title>
+
+ <!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <!-- HERO / HEADER -->
+  <header id="hero" class="container">
+    <div class="hero-left">
+      <div id="disclamer" class="profile">
+        <img src="img/minha_foto.png" alt="Foto de Pabllo Leviev" class="profile-photo">
+        <div class="profile-text">
+          <h1>Pabllo Leviev</h1>
+          <p class="role">Engenharia de Software · Desenvolvedor Full Stack · Ciência da Computação</p>
+        </div>
+      </div>
+
+      <p class="lead">
+        Meu foco profissional e acadêmico está 100% voltado para Engenharia de Software e Desenvolvimento Full Stack.
+        Embora eu tenha experiência em Marketing Digital e Tráfego Pago, considero esses conhecimentos apenas um diferencial estratégico.
+        Estudante de Ciência da Computação há 1 ano, dedicado a dominar Java, HTML, CSS e desenvolvimento de sistemas robustos.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">Ver projetos técnicos</a>
+        <a class="btn ghost" href="#about">Sobre mim</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- BANNER CORRIGIDO -->
+      <img src="img/banner.jpg" alt="Banner de apresentação" class="banner">
+    </div>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="container">
+    <h2>Contato</hh2>
+    <p>Preencha o formulário e eu responderei via e-mail ou WhatsApp — ou use o e-mail direto.</p>
+
+    <form id="contact-form" class="form-card" novalidate>
+      <div class="row">
+        <label class="form-group">
+          <span>Nome</span>
+          <input id="name" name="Nome" type="text" placeholder="Seu nome completo" required>
+        </label>
+
+        <label class="form-group">
+          <span>E-mail</span>
+          <input id="email" name="E-mail" type="email" placeholder="email@exemplo.com" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="form-group">
+          <span>WhatsApp</span>
+          <input id="phone" name="WhatsApp" type="tel" placeholder="+55 (61) 98466-0994" value="+5561984660994">
+        </label>
+
+        <label class="form-group">
+          <span>Interesse</span>
+          <select id="interest" name="Interesse" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="estagio">Estágio</option>
+            <option value="junior">Vaga Júnior</option>
+            <option value="freelance">Freelance</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="form-group">
+        <span>Mensagem</span>
+        <textarea id="message" name="Mensagem" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Enviar por e-mail</button>
+        <button type="button" id="previewBtn" class="btn ghost">Visualizar mensagem</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section id="technologies" class="container">
+    <h2>Tecnologias</h2>
+    <div class="grid tech-grid">
+      <article class="tech-card">
+        <div class="tech-icon"><i class="bi bi-github"></i></div>
+        <h3>Git & GitHub</h3>
+        <p>Versionamento, branches, PRs e fluxo de trabalho colaborativo.</p>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-icon"><i class="bi bi-code-slash"></i></div>
+        <h3>HTML, CSS & Java</h3>
+        <p>Desenvolvimento web, layouts responsivos e lógica orientada a objetos em Java.</p>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-icon"><i class="bi bi-lightning-charge"></i></div>
+        <h3>JavaScript & Python</h3>
+        <p>Interações front-end, manipulação de dados e lógica de programação para sistemas completos.</p>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-icon"><i class="bi bi-brush"></i></div>
+        <h3>Figma & UI/UX</h3>
+        <p>Prototipagem e boas práticas de experiência do usuário aplicadas em projetos técnicos.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container split">
+    <div class="about-left">
+      <h2>Sobre mim</h2>
+      <p><strong>Idade:</strong> 18 anos</p>
+      <p><strong>Curso:</strong> Ciência da Computação</p>
+      <p><strong>Status:</strong> Namorando</p>
+    </div>
+
+    <div class="about-right">
+      <h3>Evolução e foco técnico</h3>
+      <p>
+        Meu nome completo é <em>Pabllo Batista Morais Da Costa</em>. Estou totalmente dedicado à Engenharia de Software e
+        Desenvolvimento Full Stack.
+      </p>
+      <p>
+        Embora meu histórico em Marketing Digital e Tráfego Pago seja um diferencial estratégico, 
+        meu core de atuação está no desenvolvimento de sistemas, programação em Java, HTML, CSS e aplicações web.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2>Projetos Técnicos</h2>
+
+    <div class="project-card">
+      <img src="projetos/logo_projects.png" alt="Logo dos Projetos">
+      <h3>Portfólio de Projetos</h3>
+      <p>Demonstrativo dos meus projetos técnicos e mini-aplicações de front-end e Full Stack.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="projetos/projeto_1.png" alt="Design System no Figma">
+      <h3>Design System — UI/UX</h3>
+      <p>Criação completa de Design System com tokens, grids, tipografia e componentes reutilizáveis.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="projetos/projeto_2.png" alt="Aplicação em Java">
+      <h3>Aplicação Java — CRUD</h3>
+      <p>Sistema Java com cadastro, listagem, busca e atualização usando OOP e boas práticas.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="projetos/projeto_3.png" alt="Projeto de Automação">
+      <h3>Automação com JS</h3>
+      <p>Mini-aplicação usando DOM, eventos, JSON e manipulação dinâmica de interface.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-content">
+
+      <div class="footer-group">
+        <h4>Contato</h4>
+        <p><i class="bi bi-envelope"></i> pablloleviev@gmail.com</p>
+        <p><i class="bi bi-whatsapp"></i> +55 61 98466-0994</p>
+      </div>
+
+      <div class="footer-group">
+        <h4>Redes</h4>
+
+        <ul class="footer-links">
+          <li>
+            <a href="https://github.com/pablloleviev" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-group">
+        <h4>Créditos</h4>
+        <p>© 2025 Pabllo Leviev — Portfólio.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS EXTERNO -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

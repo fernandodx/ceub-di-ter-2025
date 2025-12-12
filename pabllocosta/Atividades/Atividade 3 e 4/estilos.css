@@ -1,0 +1,160 @@
+/* ==================================== */
+/* ARQUIVO: estilos.css (CSS PURO)      */
+/* Tema: Peaky Blinders - Dark/Vintage  */
+/* ==================================== */
+
+/* --- Variáveis de Cores --- */
+:root {
+    --fundo-principal: #1a1a1a;
+    --cor-texto: #f0f0f0;
+    --card-fundo: #2c2c2c;
+    --vintage-gold: #a87932;
+    --card-hover: #3c3c3c;
+}
+
+/* --- Base e Configurações Globais --- */
+body {
+    background-color: var(--fundo-principal);
+    color: var(--cor-texto);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('img/banner_peaky.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+
+/* --- Header --- */
+header {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 150px 20px 40px;
+    text-align: center;
+    border-bottom: 5px solid var(--vintage-gold);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-shadow: 
+        0 0 20px rgba(168, 121, 50, 0.6),
+        0 0 40px rgba(168, 121, 50, 0.4);
+}
+
+/* --- Main Layout --- */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.conteudo-principal {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* --- Poster --- */
+.poster img {
+    max-width: 350px;
+    height: auto;
+    border: 8px solid var(--vintage-gold);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+
+/* --- Card de Informações --- */
+.informacoes {
+    flex-grow: 1;
+    background-color: var(--card-fundo);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    color: var(--vintage-gold);
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+/* --- Lista de Atores --- */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: var(--card-hover);
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid var(--vaticennage-gold);
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+}
+
+/* --- Botão IMDB --- */
+.link-imdb {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: var(--vintage-gold);
+    color: var(--fundo-principal);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, opacity 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link-imdb:hover {
+    background-color: #d1a457;
+    opacity: 0.9;
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.85em;
+    color: #888;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 900px) {
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .poster img {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
+    header {
+        padding: 100px 20px 30px;
+    }
+}

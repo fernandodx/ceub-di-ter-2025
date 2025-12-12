@@ -1,0 +1,105 @@
+/* =========================================
+   ESTILOS GERAIS (Reset básico)
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+    background-color: #1a1a1a; /* Fundo escuro para destacar o jogo */
+    color: #333; /* Cor do texto padrão */
+}
+
+/* =========================================
+   BANNER DE FUNDO (O Desafio)
+   ========================================= */
+.banner {
+    /* Imagem de fundo épica */
+    background-image: url('https://images.alphacoders.com/230/thumb-1920-230678.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center;
+    height: 300px; /* Altura do banner */
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra em baixo do banner */
+}
+
+.banner-content h1 {
+    color: white; /* Texto branco */
+    font-size: 3em; /* Letra grande */
+    text-shadow: 2px 2px 4px #000000; /* Sombra preta no texto para leitura */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente atrás do texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* =========================================
+   LAYOUT E CARDS (Organização)
+   ========================================= */
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: -50px auto 20px; /* Margem negativa para subir os cards para cima do banner */
+    padding: 0 20px;
+    position: relative; /* Necessário para ficar acima do banner */
+}
+
+.card {
+    background-color: white; /* Fundo branco do cartão */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço entre os cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra elegante (Obrigatório do desafio) */
+    text-align: center; /* Centraliza o conteúdo do card */
+}
+
+/* =========================================
+   ELEMENTOS ESPECÍFICOS
+   ========================================= */
+h2 {
+    color: #444;
+    border-bottom: 2px solid #ddd; /* Linha sutil abaixo do título */
+    padding-bottom: 10px;
+}
+
+.poster {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    max-width: 100%; /* Garante que a imagem não saia do card no telemóvel */
+    height: auto;
+}
+
+ul {
+    list-style-type: none; /* Remove as bolinhas da lista */
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Botão Estilizado para o Link */
+.botao {
+    display: inline-block;
+    background-color: #007bff; /* Azul */
+    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s; /* Animação suave */
+}
+
+.botao:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 0.9em;
+}

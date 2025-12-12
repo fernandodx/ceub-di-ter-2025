@@ -1,0 +1,194 @@
+:root {
+    --primary: #1400cc;
+    --secondary: #313131;
+    --text-color: #f5f5f5;
+    --text-secondary: #1900ff;
+    --text-tertiary: #d40000;
+}
+
+
+* {
+    font-family: Quicksand;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#event-subscription {
+    background: linear-gradient(rgba(20, 0, 110, 0.1), rgba(20, 0, 110, 0.1)), url("../img/banner.jpg");
+    background-position:center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    color: var(--text-color);
+}
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+#disclamer h2 {
+    color: var(--primary);
+}
+
+#disclamer .about-you {
+    font-size: 1.2em;
+    max-width: 350px;
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 1em;
+}
+
+#subscription-form P {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input {
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    background: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px 12px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* Tecnologias */
+
+#key-technologys h2{
+    background: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 2em;
+    font-weight: bold;
+
+}
+
+.technologys {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.technology {
+    
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 15%;
+    color: var(--text-secondary);
+
+}
+
+#technology-1 {
+    background-image: url(../img/logos/github.png);
+}
+
+#technology-2 {
+    background-image: url(../img/logos/figma.png);
+}
+#technology-3 {
+    background-image: url(../img/logos/html.webp);
+}
+#technology-4 {
+    background-image: url(../img/logos/css.webp);
+}
+#technology-5 {
+    background-image: url(../img/logos/js.png);
+}
+
+.technology .technology-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    background-size: 7em  ;
+    background-position: center;
+    margin-bottom: 1.5em;
+}
+
+/* Sobre */
+
+#about {
+    height: 400px;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#about-id, #about-description {
+    max-width: 40%;
+    
+}
+
+#about-id {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-id i {
+    color: var(--primary);
+    font-size: 6em;
+    margin-right: 0.5em;
+}
+
+#about-description h3{
+    color: var(--primary);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+
+}
+
+
+#about-description p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}

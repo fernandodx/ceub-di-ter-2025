@@ -1,0 +1,453 @@
+
+:root{
+  --primary: #4C2C2A;
+  --secondary: #806260;
+  --text-color: #E59A94;
+  --text-secondary: #B39A98;
+  --text-tertiary:#331412;
+}
+
+* {
+  font-family: Ubuntu;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+#event-subscription {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover ;
+  height: 85vh; /* Ocupa 85% da altura da tela visível */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+#disclamer h2 {
+  color: var(--primary);
+}
+
+#disclamer .about-you {
+  font-size: 1.2em;
+  max-width: 350px;
+  font-weight: bold;
+}
+
+#disclamer img{
+  max-width: 20%;
+  display: block;
+  object-fit: cover;
+  border-radius: 25%;
+  align-items: center;
+  padding: 10px;
+  background-color: #3a1b188c;
+}
+
+#subscription-form {
+  background-color:var(--secondary);
+  padding: 1em;
+  /* max-width: 22%; */
+}
+
+#subscription-form p {
+  font-size: 1.5em;
+  color: var(--text-tertiary);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8;
+}
+
+.form-group label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 8px 12px;
+  opacity: 0.7;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Tecnologias */
+
+#key-technologys h2 {
+  background: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  padding: 2em;
+  font-weight: bold;
+}
+
+.technologys {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.technology {
+  font-size: 0.5em;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 15%; /* 5 itens por linha */
+  color: var(--text-tertiary);
+}
+
+#technology-1 { background-image: url(../img/logos/github.png); }
+#technology-2 { background-image: url(../img/logos/figma.png); }
+#technology-3 { background-image: url(../img/logos/html.webp); }
+#technology-4 { background-image: url(../img/logos/css.webp); }
+#technology-5 { background-image: url(../img/logos/js.png); }
+
+.technology .technology-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+#about {
+  height: 400px;
+  background: linear-gradient(rgba(168, 31, 31, 0.8), rgba(0, 0, 0, 0.8)), url("..//img/logos/pawel-czerwinski-dgJT71cXlC4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 3em;
+}
+
+#about-id, #about-description {
+  max-width:  40;
+}
+
+#about-id {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+#about-id i {
+  color: var(--text-color);
+  font-size: 6em;
+  margin-right: 0.5em;
+}
+
+#about-description h3{
+  color: var(--text-color);
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+#about-description p {
+  text-align: justify;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+/* Projetos */
+
+#projects {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+.project img {
+  width: auto;
+  max-width: 50%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+.project h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2em;
+  color: var(--text-color);
+}
+.project-description {
+  width: 100%;
+  padding-left: 2em;
+}
+.project-description ul {
+  list-style-position: inside;
+}
+.project-description ul li {
+  margin-bottom: 1em;
+}
+.project-description ul li:last-child {
+  font-weight: bold;
+}
+
+/* Rodapé */
+#footer {
+  background: #E59A94;
+  color: #331412;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-top: 4px solid rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Título do footer */
+#footer h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Container de ícones */
+.footer-icons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+/* Ícones */
+.footer-icons a {
+  color: #331412;
+  font-size: 1.7rem;
+  transition: 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #5b2a26;
+  transform: scale(1.15);
+}
+
+/* Créditos */
+.footer-credits {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+/* ------------------------------------------------------------------------------------------ */
+
+/* TELA DE IPAD/TABLET (Telas entre 768px e 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* Seção de Assinatura */
+  #event-subscription {
+      height: auto; /* Permite que o conteúdo defina a altura */
+      flex-direction: column;
+      padding: 4em 1em;
+      gap: 2em;
+  }
+  #subscription-form {
+      max-width: 80%; /* Ocupa mais espaço na largura */
+      width: 100%;
+  }
+  #disclamer .about-you {
+      max-width: 100%;
+  }
+
+  /* Tecnologias */
+  .technologys {
+      flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+      justify-content: center;
+      gap: 3em 1em;
+  }
+  .technology {
+      max-width: 30%; /* 3 itens por linha */
+  }
+
+  /* Sobre */
+  #about {
+      height: auto;
+      padding: 3em 1em;
+      flex-direction: column;
+      gap: 2em;
+      text-align: center;
+  }
+  #about-id, #about-description {
+      max-width: 80%;
+  }
+  #about-id {
+      flex-direction: column;
+      justify-content: center;
+  }
+  #about-id i {
+      margin-right: 0;
+      margin-bottom: 0.5em;
+  }
+
+  /* Projetos */
+  #projects {
+      width: 90%;
+  }
+  .project {
+      gap: 2%;
+      margin-bottom: 3em;
+  }
+  .project img {
+      height: 250px;
+  }
+  .project h3 {
+      font-size: 1.5em;
+  }
+  .project-description {
+      padding-left: 1em;
+  }
+}
+
+/* TELAS PEQUENAS (Celulares - Max-width: 767px) */
+@media screen and (max-width: 767px) {
+
+  /* Ajustes Gerais */
+  * {
+      font-size: 16px; /* Aumenta a fonte base para celular */
+  }
+
+  /* Seção de Assinatura */
+  #event-subscription {
+      height: auto;
+      flex-direction: column; /* Pilha vertical */
+      padding: 2em 0.5em;
+      gap: 1.5em;
+  }
+  #disclamer {
+      text-align: center;
+      padding: 0 1em;
+  }
+  #disclamer img {
+      margin: 1em auto;
+      max-width: 50%;
+  }
+  #disclamer .about-you {
+      max-width: 100%;
+      font-size: 1em;
+  }
+  #subscription-form {
+      max-width: 95%;
+  }
+  #subscription-form p {
+      font-size: 1.2em;
+  }
+  h2 {
+      font-size: 1.5em;
+  }
+
+  /* Tecnologias */
+  #key-technologys h2 {
+      padding: 1.5em 1em;
+  }
+  .technologys {
+      flex-direction: column; /* Coluna única */
+      padding: 1em;
+  }
+  .technology {
+      max-width: 100%; /* Ocupa toda a largura */
+      margin-bottom: 1.5em;
+      text-align: center;
+  }
+  .technology .technology-img {
+      width: 80px;
+      height: 80px;
+  }
+
+  /* Sobre */
+  #about {
+      height: auto;
+      padding: 2em 1em;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 2em;
+  }
+  #about-id, #about-description {
+      max-width: 95%;
+  }
+  #about-id {
+      flex-direction: column;
+  }
+  #about-id i {
+      font-size: 4em;
+      margin: 0 0 0.5em 0;
+  }
+  #about-description h3 {
+      font-size: 1.2em;
+      margin-top: 1em;
+  }
+  #about-description p {
+      font-size: 1em;
+  }
+
+  /* Projetos */
+  #projects {
+      width: 95%;
+  }
+  .project {
+      flex-direction: column; /* Imagem acima da descrição */
+      gap: 1em;
+  }
+  .project img {
+      max-width: 100%;
+      height: auto;
+  }
+  .project h3 {
+      font-size: 1.5em;
+      line-height: 1.2em;
+  }
+  .project-description {
+      padding-left: 0;
+      text-align: center;
+  }
+  .project-description ul {
+      text-align: left; /* Mantém a lista alinhada */
+      padding-left: 1em;
+  }
+}

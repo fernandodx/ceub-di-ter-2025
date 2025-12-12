@@ -1,0 +1,63 @@
+/*
+Padrão da Sintaxe
+
+SELETOR {
+    propriedade: valor;
+    propriedade2: valor2;
+}
+
+*/
+
+h1 {
+    color: rgb(17, 17, 17);
+}
+h2{
+    color: whitesmoke;
+}
+h3{
+    color: rgb(231, 64, 22);
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.destaque{
+    background-color: brown;
+    padding: 8px;
+    margin: 8px;
+    border: 5px solid saddlebrown;
+    border-style: dotted;
+    color: aliceblue;
+}
+
+#titulo_secundario{
+    font-style: italic;
+    color: rgb(114, 110, 110);
+}
+
+p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+p b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}
+
+ul li {
+    text-align:left;
+}
+
+.botao_default:hover {
+    background-color: rgb(238, 228, 228);
+    color: rgb(236, 9, 9);
+    padding: 8px 16px 8px 16px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.8s;
+
+}
